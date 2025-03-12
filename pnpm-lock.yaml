@@ -262,9 +262,9 @@ importers:
       '@elizaos/plugin-multiversx':
         specifier: workspace:*
         version: link:../packages/plugin-multiversx
-      '@elizaos/plugin-nasa':
+      '@elizaos/plugin-nba-betting':
         specifier: workspace:*
-        version: link:../packages/plugin-nasa
+        version: link:../packages/plugin-nba-betting
       '@elizaos/plugin-near':
         specifier: workspace:*
         version: link:../packages/plugin-near
@@ -2053,7 +2053,7 @@ importers:
         specifier: 7.1.0
         version: 7.1.0
 
-  packages/plugin-nasa:
+  packages/plugin-nba-betting:
     dependencies:
       '@elizaos/core':
         specifier: workspace:*
