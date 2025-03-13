@@ -1,11 +1,11 @@
 import { ModelProviderName, Clients } from "@elizaos/core";
-import { nasaPlugin } from "@elizaos/plugin-nba-betting";
+import { nbaBetting } from "@elizaos/plugin-nba-betting";
 
 export const mainCharacter = {
     name: "Agent Hoopz",
     clients: [Clients.TWITTER],
     modelProvider: ModelProviderName.HYPERBOLIC,
-    plugins: [nasaPlugin],
+    plugins: [nbaBetting],
     settings: {
         voice: {
             model: "en_US-john-medium",

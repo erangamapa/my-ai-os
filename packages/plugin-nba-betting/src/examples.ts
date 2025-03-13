@@ -1,148 +1,174 @@
 import { ActionExample } from "@elizaos/core";
 
-export const getMarsRoverExamples: ActionExample[][] = [
+export const getNBAMoneyLineBettingMarketsExamples: ActionExample[][] = [
     [
         {
             user: "{{user1}}",
             content: {
-                text: "I wonder what mars looks like today?",
+                text: "Can you show me the NBA Moneyline betting markets?",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Let me fetch a picture from a mars rover.",
-                action: "NASA_GET_MARS_ROVER_PHOTO",
+                text: "Sure! Here are the current NBA Moneyline betting markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
-        }
+        },
     ],
     [
         {
             user: "{{user1}}",
             content: {
-                text: "Can you fetch a random picture of Mars?",
+                text: "I need the latest NBA Moneyline odds.",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Let me fetch a picture from a mars rover.",
-                action: "NASA_GET_MARS_ROVER_PHOTO",
-            },
-        }
-    ],
-]
-
-export const getAPODExamples: ActionExample[][] = [
-    [
-        {
-            user: "{{user1}}",
-            content: {
-                text: "What's the nasa Astronomy picture of the day?",
+                text: "No problem! Here are the latest NBA Moneyline odds:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
         },
-        {
-            user: "{{agent}}",
-            content: {
-                text: "Let me get the nasa image of the day.",
-                action: "NASA_GET_APOD",
-            },
-        }
     ],
     [
         {
             user: "{{user1}}",
             content: {
-                text: "I love space.",
+                text: "What are the Moneyline bets for today's NBA games?",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Oh really, then let me get the nasa image of the day to make your day even better.",
-                action: "NASA_GET_APOD",
+                text: "Here are the Moneyline bets for today's NBA games:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
-        }
+        },
     ],
     [
         {
             user: "{{user1}}",
             content: {
-                text: "I am in love with space and space travel.",
+                text: "Can you provide the NBA Moneyline markets?",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Space is beautiful, dark, scary, and vast. Would you like to see a current photo of space from NASA?",
+                text: "Of course! Here are the NBA Moneyline markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
         },
-        {
-            user: "{{user1}}",
-            content: {
-                text: "yes",
-            },
-        },
-        {
-            user: "{{agent}}",
-            content: {
-                text: "Here is the NASA Astronomy Picture of the Day.",
-                action: "NASA_GET_APOD",
-            },
-        }
     ],
     [
         {
             user: "{{user1}}",
             content: {
-                text: "Space is beautiful, dark, scary, and unfathomably vast.",
+                text: "Show me the NBA Moneyline betting options.",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Indeed! Would you like to see a current photo from the NASA astronomy database?",
+                text: "Here are the NBA Moneyline betting options:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
         },
-        {
-            user: "{{user1}}",
-            content: {
-                text: "yes",
-            },
-        },
-        {
-            user: "{{agent}}",
-            content: {
-                text: "Here is the NASA Astronomy Picture of the Day.",
-                action: "NASA_GET_APOD",
-            },
-        }
     ],
     [
         {
             user: "{{user1}}",
             content: {
-                text: "I'm a big fan of space and astronomy.",
+                text: "Can you list the NBA Moneyline markets for me?",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Would you like to see the Nasa Astronomy Picture of the Day?",
+                text: "Sure! Here are the current NBA Moneyline markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
         },
         {
             user: "{{user1}}",
             content: {
-                text: "yes",
+                text: "Thanks! Can you also provide the odds for these markets?",
             },
         },
         {
             user: "{{agent}}",
             content: {
-                text: "Here is the NASA Astronomy Picture of the Day.",
-                action: "NASA_GET_APOD",
+                text: "Absolutely! Here are the odds for the listed NBA Moneyline markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
             },
-        }
-    ]
+        },
+    ],
+    [
+        {
+            user: "{{user1}}",
+            content: {
+                text: "I'm looking for the NBA Moneyline betting markets.",
+            },
+        },
+        {
+            user: "{{agent}}",
+            content: {
+                text: "Here are the NBA Moneyline betting markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
+            },
+        },
+        {
+            user: "{{user1}}",
+            content: {
+                text: "Great! Can you also show me the latest odds?",
+            },
+        },
+        {
+            user: "{{agent}}",
+            content: {
+                text: "Sure! Here are the latest odds for the NBA Moneyline markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
+            },
+        },
+        {
+            user: "{{user1}}",
+            content: {
+                text: "Thank you!",
+            },
+        },
+        {
+            user: "{{agent}}",
+            content: {
+                text: "You're welcome! If you need any more information, feel free to ask.",
+            },
+        },
+    ],
+    [
+        {
+            user: "{{user1}}",
+            content: {
+                text: "What types of betting markets are available?",
+            },
+        },
+        {
+            user: "{{agent}}",
+            content: {
+                text: "We offer various NBA betting markets including Moneyline, Point Spread, and Over/Under. Would you like to see the current Moneyline markets?",
+            },
+        },
+        {
+            user: "{{user1}}",
+            content: {
+                text: "Yes, please show me the Moneyline markets.",
+            },
+        },
+        {
+            user: "{{agent}}",
+            content: {
+                text: "Here are the current NBA Moneyline betting markets:",
+                action: "NBA_MONEY_LINE_MARKETS",
+            },
+        },
+    ],
 ];

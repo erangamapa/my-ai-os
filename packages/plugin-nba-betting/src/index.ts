@@ -1,15 +1,14 @@
 import { Plugin } from "@elizaos/core";
-import { getAPODAction } from "./actions/getAPOD";
-import { getMarsRoverAction } from "./actions/getMarsRoverPhoto";
+import { getNBAMoneyLineMarketsAction } from "./actions/getNBAMoneyLineMarkets";
 
-export const nasaPlugin: Plugin = {
-    name: "nasa",
-    description: "NASA plugin for Eliza",
-    actions: [getAPODAction, getMarsRoverAction],
+export const nbaBetting: Plugin = {
+    name: "nba betting",
+    description: "NBA betting plugin for cb",
+    actions: [getNBAMoneyLineMarketsAction],
     // evaluators analyze the situations and actions taken by the agent. they run after each agent action
     // allowing the agent to reflect on what happened and potentially trigger additional actions or modifications
     evaluators: [],
     // providers supply information and state to the agent's context, help agent access necessary data
     providers: [],
 };
-export default nasaPlugin;
+export default nbaBetting;

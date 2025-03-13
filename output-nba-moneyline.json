@@ -1,0 +1,4920 @@
+{
+    "name": "NBA",
+    "key": "basketball-usa-nba",
+    "sport": {
+        "name": "Basketball",
+        "key": "basketball"
+    },
+    "events": [
+        {
+            "sequence": "3103",
+            "id": 25966820,
+            "home": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "3098",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.057,
+                                    "minStake": 0.1,
+                                    "maxStake": 9890.43480833,
+                                    "probability": 0.911,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 10.774,
+                                    "minStake": 0.1,
+                                    "maxStake": 563.75479999,
+                                    "probability": 0.089,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Atlanta Hawks v Charlotte Hornets",
+            "key": "ca56-atlanta-hawks-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-12T23:30:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    },
+                    "period=q4": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "3436",
+            "id": 25966863,
+            "home": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "3436",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 2.534,
+                                    "minStake": 0.1,
+                                    "maxStake": 1608.66999999,
+                                    "probability": 0.368,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 1.474,
+                                    "minStake": 0.1,
+                                    "maxStake": 3365.41840833,
+                                    "probability": 0.632,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "BOS Celtics v Oklahoma City Thunder",
+            "key": "c523-boston-celtics-v-c5c2-oklahoma-city-thunder",
+            "cutoffTime": "2025-03-12T23:30:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    },
+                    "period=q4": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "3329",
+            "id": 25966756,
+            "home": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "3325",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.041,
+                                    "minStake": 0.1,
+                                    "maxStake": 5844.38516666,
+                                    "probability": 0.91,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 10.485,
+                                    "minStake": 0.1,
+                                    "maxStake": 239.61979999,
+                                    "probability": 0.09,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Toronto Raptors v Philadelphia 76ers",
+            "key": "c613-toronto-raptors-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-12T23:30:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    },
+                    "period=q4": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "2137",
+            "id": 25966751,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "2130",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.191,
+                                    "minStake": 0.1,
+                                    "maxStake": 3710.41107499,
+                                    "probability": 0.792,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 4.549,
+                                    "minStake": 0.1,
+                                    "maxStake": 719.81939166,
+                                    "probability": 0.208,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Houston Rockets v Phoenix Suns",
+            "key": "ca6b-houston-rockets-v-c5d5-phoenix-suns",
+            "cutoffTime": "2025-03-13T00:00:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "2487",
+            "id": 25966849,
+            "home": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {},
+            "name": "Memphis Grizzlies v Utah Jazz",
+            "key": "c5b2-memphis-grizzlies-v-ca8d-utah-jazz",
+            "cutoffTime": "2025-03-13T00:00:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "2215",
+            "id": 25967053,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "2215",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 4.009,
+                                    "minStake": 0.1,
+                                    "maxStake": 1440.59999999,
+                                    "probability": 0.235,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 1.233,
+                                    "minStake": 0.1,
+                                    "maxStake": 6104.23706666,
+                                    "probability": 0.765,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Miami Heat v LA Clippers",
+            "key": "c5b4-miami-heat-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-13T00:00:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "2042",
+            "id": 25966818,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING_LIVE",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "2025",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.182,
+                                    "minStake": 0.1,
+                                    "maxStake": 9082.26882499,
+                                    "probability": 0.813,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 5.127,
+                                    "minStake": 0.1,
+                                    "maxStake": 1680.21979999,
+                                    "probability": 0.187,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "San Antonio Spurs v Dallas Mavericks",
+            "key": "c5e3-san-antonio-spurs-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-13T00:00:00Z",
+            "metadata": {
+                "opinions": {
+                    "period=q1": {
+                        "outcomes": []
+                    },
+                    "period=q2": {
+                        "outcomes": []
+                    },
+                    "period=q3": {
+                        "outcomes": []
+                    }
+                },
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "1070",
+            "id": 25967397,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "1069",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.764,
+                                    "minStake": 0.1,
+                                    "maxStake": 7492.74288,
+                                    "probability": 0.551,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 2.164,
+                                    "minStake": 0.1,
+                                    "maxStake": 5761.9198,
+                                    "probability": 0.449,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Denver Nuggets v Minnesota Timberwolves",
+            "key": "ca64-denver-nuggets-v-c5b5-minnesota-timberwolves",
+            "cutoffTime": "2025-03-13T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "997",
+            "id": 25967396,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "985",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 2.473,
+                                    "minStake": 0.1,
+                                    "maxStake": 5762.4,
+                                    "probability": 0.393,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 1.602,
+                                    "minStake": 0.1,
+                                    "maxStake": 9508.9106,
+                                    "probability": 0.607,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Portland Trail Blazers v New York Knicks",
+            "key": "ca7d-portland-trail-blazers-v-c5bd-new-york-knicks",
+            "cutoffTime": "2025-03-13T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "108",
+            "id": 25966822,
+            "home": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "103",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.1,
+                                    "minStake": 0.1,
+                                    "maxStake": 7683.2,
+                                    "probability": 0.901,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 10,
+                                    "minStake": 0.1,
+                                    "maxStake": 85.36878,
+                                    "probability": 0.099,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Detroit Pistons v Washington Wizards",
+            "key": "c546-detroit-pistons-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-13T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "117",
+            "id": 25966962,
+            "home": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "117",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.463,
+                                    "minStake": 0.1,
+                                    "maxStake": 1659.43792,
+                                    "probability": 0.677,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 3.06,
+                                    "minStake": 0.1,
+                                    "maxStake": 372.97036,
+                                    "probability": 0.323,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "MIL Bucks v LAL Lakers",
+            "key": "ca77-milwaukee-bucks-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-13T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "106",
+            "id": 25967010,
+            "home": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "104",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.763,
+                                    "minStake": 0.1,
+                                    "maxStake": 1006.97156,
+                                    "probability": 0.562,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 2.26,
+                                    "minStake": 0.1,
+                                    "maxStake": 609.77756,
+                                    "probability": 0.438,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "CHI Bulls v Brooklyn Nets",
+            "key": "ca5e-chicago-bulls-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-03-14T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "113",
+            "id": 25966907,
+            "home": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "108",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 2.07,
+                                    "minStake": 0.1,
+                                    "maxStake": 718.0558,
+                                    "probability": 0.478,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 1.893,
+                                    "minStake": 0.1,
+                                    "maxStake": 860.38022,
+                                    "probability": 0.522,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "New Orleans Pelicans v Orlando Magic",
+            "key": "c5bc-new-orleans-pelicans-v-ca83-orlando-magic",
+            "cutoffTime": "2025-03-14T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "116",
+            "id": 25969359,
+            "home": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "TRADING",
+            "markets": {
+                "basketball.moneyline": {
+                    "submarkets": {
+                        "period=ot&period=ft": {
+                            "sequence": "109",
+                            "selections": [
+                                {
+                                    "outcome": "home",
+                                    "params": "",
+                                    "price": 1.403,
+                                    "minStake": 0.1,
+                                    "maxStake": 1906.50082,
+                                    "probability": 0.705,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                },
+                                {
+                                    "outcome": "away",
+                                    "params": "",
+                                    "price": 3.36,
+                                    "minStake": 0.1,
+                                    "maxStake": 325.55894,
+                                    "probability": 0.295,
+                                    "status": "SELECTION_ENABLED",
+                                    "side": "BACK"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "name": "Golden State Warriors v Sacramento Kings",
+            "key": "c569-golden-state-warriors-v-ca8b-sacramento-kings",
+            "cutoffTime": "2025-03-14T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967045,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v BOS Celtics",
+            "key": "c5b4-miami-heat-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-14T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966830,
+            "home": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Philadelphia 76ers v Indiana Pacers",
+            "key": "c5d3-philadelphia-76ers-v-c575-indiana-pacers",
+            "cutoffTime": "2025-03-14T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967041,
+            "home": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Atlanta Hawks v LA Clippers",
+            "key": "ca56-atlanta-hawks-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-14T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969320,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Houston Rockets v Dallas Mavericks",
+            "key": "ca6b-houston-rockets-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-15T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969366,
+            "home": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Memphis Grizzlies v Cleveland Cavaliers",
+            "key": "c5b2-memphis-grizzlies-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-15T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966752,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v Orlando Magic",
+            "key": "c5b5-minnesota-timberwolves-v-ca83-orlando-magic",
+            "cutoffTime": "2025-03-15T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969362,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v Charlotte Hornets",
+            "key": "c5e3-san-antonio-spurs-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-15T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966775,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Denver Nuggets v LAL Lakers",
+            "key": "ca64-denver-nuggets-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-15T01:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966754,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v Toronto Raptors",
+            "key": "ca8d-utah-jazz-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-15T01:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967025,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v Sacramento Kings",
+            "key": "c5d5-phoenix-suns-v-ca8b-sacramento-kings",
+            "cutoffTime": "2025-03-15T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966906,
+            "home": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Brooklyn Nets v BOS Celtics",
+            "key": "c525-brooklyn-nets-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-15T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967038,
+            "home": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Detroit Pistons v Oklahoma City Thunder",
+            "key": "c546-detroit-pistons-v-c5c2-oklahoma-city-thunder",
+            "cutoffTime": "2025-03-15T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966819,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Houston Rockets v CHI Bulls",
+            "key": "ca6b-houston-rockets-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-16T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969365,
+            "home": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "MIL Bucks v Indiana Pacers",
+            "key": "ca77-milwaukee-bucks-v-c575-indiana-pacers",
+            "cutoffTime": "2025-03-16T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966847,
+            "home": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Memphis Grizzlies v Miami Heat",
+            "key": "c5b2-memphis-grizzlies-v-c5b4-miami-heat",
+            "cutoffTime": "2025-03-16T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966815,
+            "home": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Golden State Warriors v New York Knicks",
+            "key": "c569-golden-state-warriors-v-c5bd-new-york-knicks",
+            "cutoffTime": "2025-03-16T00:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966976,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v New Orleans Pelicans",
+            "key": "c5e3-san-antonio-spurs-v-c5bc-new-orleans-pelicans",
+            "cutoffTime": "2025-03-16T00:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966927,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Denver Nuggets v Washington Wizards",
+            "key": "ca64-denver-nuggets-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-16T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25969367,
+            "home": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Cleveland Cavaliers v Orlando Magic",
+            "key": "c53c-cleveland-cavaliers-v-ca83-orlando-magic",
+            "cutoffTime": "2025-03-16T17:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966784,
+            "home": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Dallas Mavericks v Philadelphia 76ers",
+            "key": "c545-dallas-mavericks-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-16T17:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966974,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v Phoenix Suns",
+            "key": "c5a5-los-angeles-lakers-v-c5d5-phoenix-suns",
+            "cutoffTime": "2025-03-16T19:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967035,
+            "home": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Brooklyn Nets v Atlanta Hawks",
+            "key": "c525-brooklyn-nets-v-ca56-atlanta-hawks",
+            "cutoffTime": "2025-03-16T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966992,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v Toronto Raptors",
+            "key": "ca7d-portland-trail-blazers-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-16T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969364,
+            "home": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LA Clippers v Charlotte Hornets",
+            "key": "c6dc197-la-clippers-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-16T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969361,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v Utah Jazz",
+            "key": "c5b5-minnesota-timberwolves-v-ca8d-utah-jazz",
+            "cutoffTime": "2025-03-16T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966979,
+            "home": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "MIL Bucks v Oklahoma City Thunder",
+            "key": "ca77-milwaukee-bucks-v-c5c2-oklahoma-city-thunder",
+            "cutoffTime": "2025-03-17T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969139,
+            "home": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New York Knicks v Miami Heat",
+            "key": "c5bd-new-york-knicks-v-c5b4-miami-heat",
+            "cutoffTime": "2025-03-17T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969148,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Houston Rockets v Philadelphia 76ers",
+            "key": "ca6b-houston-rockets-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-18T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966963,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v Indiana Pacers",
+            "key": "c5b5-minnesota-timberwolves-v-c575-indiana-pacers",
+            "cutoffTime": "2025-03-18T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966953,
+            "home": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New Orleans Pelicans v Detroit Pistons",
+            "key": "c5bc-new-orleans-pelicans-v-c546-detroit-pistons",
+            "cutoffTime": "2025-03-18T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969141,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v CHI Bulls",
+            "key": "ca8d-utah-jazz-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-18T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969140,
+            "home": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Golden State Warriors v Denver Nuggets",
+            "key": "c569-golden-state-warriors-v-ca64-denver-nuggets",
+            "cutoffTime": "2025-03-18T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966757,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v Toronto Raptors",
+            "key": "c5d5-phoenix-suns-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-18T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966922,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v Washington Wizards",
+            "key": "ca7d-portland-trail-blazers-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-18T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966980,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v Memphis Grizzlies",
+            "key": "ca8b-sacramento-kings-v-c5b2-memphis-grizzlies",
+            "cutoffTime": "2025-03-18T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969147,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v San Antonio Spurs",
+            "key": "c5a5-los-angeles-lakers-v-c5e3-san-antonio-spurs",
+            "cutoffTime": "2025-03-18T02:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966860,
+            "home": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Charlotte Hornets v Atlanta Hawks",
+            "key": "ca5d-charlotte-hornets-v-ca56-atlanta-hawks",
+            "cutoffTime": "2025-03-18T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969132,
+            "home": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "BOS Celtics v Brooklyn Nets",
+            "key": "c523-boston-celtics-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-03-18T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966888,
+            "home": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Golden State Warriors v MIL Bucks",
+            "key": "c569-golden-state-warriors-v-ca77-milwaukee-bucks",
+            "cutoffTime": "2025-03-19T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966833,
+            "home": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LA Clippers v Cleveland Cavaliers",
+            "key": "c6dc197-la-clippers-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-19T02:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966932,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v Dallas Mavericks",
+            "key": "c575-indiana-pacers-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-19T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966961,
+            "home": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Orlando Magic v Houston Rockets",
+            "key": "ca83-orlando-magic-v-ca6b-houston-rockets",
+            "cutoffTime": "2025-03-19T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966843,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v Detroit Pistons",
+            "key": "c5b4-miami-heat-v-c546-detroit-pistons",
+            "cutoffTime": "2025-03-19T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966977,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v New Orleans Pelicans",
+            "key": "c5b5-minnesota-timberwolves-v-c5bc-new-orleans-pelicans",
+            "cutoffTime": "2025-03-19T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969143,
+            "home": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Oklahoma City Thunder v Philadelphia 76ers",
+            "key": "c5c2-oklahoma-city-thunder-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-20T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966877,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v New York Knicks",
+            "key": "c5e3-san-antonio-spurs-v-c5bd-new-york-knicks",
+            "cutoffTime": "2025-03-20T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969142,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v Washington Wizards",
+            "key": "ca8d-utah-jazz-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-20T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966776,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v Denver Nuggets",
+            "key": "c5a5-los-angeles-lakers-v-ca64-denver-nuggets",
+            "cutoffTime": "2025-03-20T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966806,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v CHI Bulls",
+            "key": "c5d5-phoenix-suns-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-20T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967039,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v Memphis Grizzlies",
+            "key": "ca7d-portland-trail-blazers-v-c5b2-memphis-grizzlies",
+            "cutoffTime": "2025-03-20T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967040,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v Cleveland Cavaliers",
+            "key": "ca8b-sacramento-kings-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-20T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966761,
+            "home": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Charlotte Hornets v New York Knicks",
+            "key": "ca5d-charlotte-hornets-v-c5bd-new-york-knicks",
+            "cutoffTime": "2025-03-20T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966758,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v Brooklyn Nets",
+            "key": "c575-indiana-pacers-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-03-20T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969134,
+            "home": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Golden State Warriors v Toronto Raptors",
+            "key": "c569-golden-state-warriors-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-21T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966887,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v CHI Bulls",
+            "key": "ca8b-sacramento-kings-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-21T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969158,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v MIL Bucks",
+            "key": "c5a5-los-angeles-lakers-v-ca77-milwaukee-bucks",
+            "cutoffTime": "2025-03-21T02:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966766,
+            "home": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Washington Wizards v Orlando Magic",
+            "key": "ca88-washington-wizards-v-ca83-orlando-magic",
+            "cutoffTime": "2025-03-21T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966762,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v Houston Rockets",
+            "key": "c5b4-miami-heat-v-ca6b-houston-rockets",
+            "cutoffTime": "2025-03-22T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966905,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v New Orleans Pelicans",
+            "key": "c5b5-minnesota-timberwolves-v-c5bc-new-orleans-pelicans",
+            "cutoffTime": "2025-03-22T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967049,
+            "home": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Oklahoma City Thunder v Charlotte Hornets",
+            "key": "c5c2-oklahoma-city-thunder-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-22T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969138,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v Philadelphia 76ers",
+            "key": "c5e3-san-antonio-spurs-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-22T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969137,
+            "home": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Dallas Mavericks v Detroit Pistons",
+            "key": "c545-dallas-mavericks-v-c546-detroit-pistons",
+            "cutoffTime": "2025-03-22T00:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967067,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v BOS Celtics",
+            "key": "ca8d-utah-jazz-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-22T01:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966975,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v Cleveland Cavaliers",
+            "key": "c5d5-phoenix-suns-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-22T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966913,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v Denver Nuggets",
+            "key": "ca7d-portland-trail-blazers-v-ca64-denver-nuggets",
+            "cutoffTime": "2025-03-22T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966750,
+            "home": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LA Clippers v Memphis Grizzlies",
+            "key": "c6dc197-la-clippers-v-c5b2-memphis-grizzlies",
+            "cutoffTime": "2025-03-22T02:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967046,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v Brooklyn Nets",
+            "key": "c575-indiana-pacers-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-03-22T21:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969136,
+            "home": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Atlanta Hawks v Golden State Warriors",
+            "key": "ca56-atlanta-hawks-v-c569-golden-state-warriors",
+            "cutoffTime": "2025-03-22T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966760,
+            "home": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New York Knicks v Washington Wizards",
+            "key": "c5bd-new-york-knicks-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-23T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969159,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v MIL Bucks",
+            "key": "ca8b-sacramento-kings-v-ca77-milwaukee-bucks",
+            "cutoffTime": "2025-03-23T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966823,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v CHI Bulls",
+            "key": "c5a5-los-angeles-lakers-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-23T02:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966765,
+            "home": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Detroit Pistons v New Orleans Pelicans",
+            "key": "c546-detroit-pistons-v-c5bc-new-orleans-pelicans",
+            "cutoffTime": "2025-03-23T19:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966889,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v Cleveland Cavaliers",
+            "key": "ca8d-utah-jazz-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-23T19:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966853,
+            "home": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Atlanta Hawks v Philadelphia 76ers",
+            "key": "ca56-atlanta-hawks-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-23T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967068,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v Charlotte Hornets",
+            "key": "c5b4-miami-heat-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-23T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969157,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v BOS Celtics",
+            "key": "ca7d-portland-trail-blazers-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-23T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969150,
+            "home": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "away": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Toronto Raptors v San Antonio Spurs",
+            "key": "c613-toronto-raptors-v-c5e3-san-antonio-spurs",
+            "cutoffTime": "2025-03-23T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966993,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Houston Rockets v Denver Nuggets",
+            "key": "ca6b-houston-rockets-v-ca64-denver-nuggets",
+            "cutoffTime": "2025-03-23T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966810,
+            "home": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LA Clippers v Oklahoma City Thunder",
+            "key": "c6dc197-la-clippers-v-c5c2-oklahoma-city-thunder",
+            "cutoffTime": "2025-03-24T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966908,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v Minnesota Timberwolves",
+            "key": "c575-indiana-pacers-v-c5b5-minnesota-timberwolves",
+            "cutoffTime": "2025-03-24T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969144,
+            "home": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Orlando Magic v LAL Lakers",
+            "key": "ca83-orlando-magic-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-24T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969149,
+            "home": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Washington Wizards v Toronto Raptors",
+            "key": "ca88-washington-wizards-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-24T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966965,
+            "home": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Brooklyn Nets v Dallas Mavericks",
+            "key": "c525-brooklyn-nets-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-24T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967036,
+            "home": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New Orleans Pelicans v Philadelphia 76ers",
+            "key": "c5bc-new-orleans-pelicans-v-c5d3-philadelphia-76ers",
+            "cutoffTime": "2025-03-25T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969145,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Denver Nuggets v CHI Bulls",
+            "key": "ca64-denver-nuggets-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-03-25T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966960,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v MIL Bucks",
+            "key": "c5d5-phoenix-suns-v-ca77-milwaukee-bucks",
+            "cutoffTime": "2025-03-25T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966924,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v BOS Celtics",
+            "key": "ca8b-sacramento-kings-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-25T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "90",
+            "id": 25969146,
+            "home": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Charlotte Hornets v Orlando Magic",
+            "key": "ca5d-charlotte-hornets-v-ca83-orlando-magic",
+            "cutoffTime": "2025-03-25T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966829,
+            "home": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Detroit Pistons v San Antonio Spurs",
+            "key": "c546-detroit-pistons-v-c5e3-san-antonio-spurs",
+            "cutoffTime": "2025-03-25T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966814,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v Golden State Warriors",
+            "key": "c5b4-miami-heat-v-c569-golden-state-warriors",
+            "cutoffTime": "2025-03-25T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967003,
+            "home": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New York Knicks v Dallas Mavericks",
+            "key": "c5bd-new-york-knicks-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-25T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967021,
+            "home": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Houston Rockets v Atlanta Hawks",
+            "key": "ca6b-houston-rockets-v-ca56-atlanta-hawks",
+            "cutoffTime": "2025-03-26T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967008,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v Memphis Grizzlies",
+            "key": "ca8d-utah-jazz-v-c5b2-memphis-grizzlies",
+            "cutoffTime": "2025-03-26T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "85",
+            "id": 25982718,
+            "home": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Portland Trail Blazers v Cleveland Cavaliers",
+            "key": "ca7d-portland-trail-blazers-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-26T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967024,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v Oklahoma City Thunder",
+            "key": "ca8b-sacramento-kings-v-c5c2-oklahoma-city-thunder",
+            "cutoffTime": "2025-03-26T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "85",
+            "id": 25982716,
+            "home": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Philadelphia 76ers v Washington Wizards",
+            "key": "c5d3-philadelphia-76ers-v-ca88-washington-wizards",
+            "cutoffTime": "2025-03-26T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "85",
+            "id": 25982724,
+            "home": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Brooklyn Nets v Toronto Raptors",
+            "key": "c525-brooklyn-nets-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-26T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "85",
+            "id": 25982725,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v LAL Lakers",
+            "key": "c575-indiana-pacers-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-26T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966811,
+            "home": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New York Knicks v LA Clippers",
+            "key": "c5bd-new-york-knicks-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-26T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966958,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Denver Nuggets v MIL Bucks",
+            "key": "ca64-denver-nuggets-v-ca77-milwaukee-bucks",
+            "cutoffTime": "2025-03-27T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966982,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v BOS Celtics",
+            "key": "c5d5-phoenix-suns-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-27T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967044,
+            "home": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Cleveland Cavaliers v San Antonio Spurs",
+            "key": "c53c-cleveland-cavaliers-v-c5e3-san-antonio-spurs",
+            "cutoffTime": "2025-03-27T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966935,
+            "home": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Orlando Magic v Dallas Mavericks",
+            "key": "ca83-orlando-magic-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-27T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966747,
+            "home": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Washington Wizards v Indiana Pacers",
+            "key": "ca88-washington-wizards-v-c575-indiana-pacers",
+            "cutoffTime": "2025-03-27T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "79",
+            "id": 25994957,
+            "home": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Miami Heat v Atlanta Hawks",
+            "key": "c5b4-miami-heat-v-ca56-atlanta-hawks",
+            "cutoffTime": "2025-03-27T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "76",
+            "id": 26006757,
+            "home": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "CHI Bulls v LAL Lakers",
+            "key": "ca5e-chicago-bulls-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-28T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966957,
+            "home": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Oklahoma City Thunder v Memphis Grizzlies",
+            "key": "c5c2-oklahoma-city-thunder-v-c5b2-memphis-grizzlies",
+            "cutoffTime": "2025-03-28T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966831,
+            "home": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Utah Jazz v Houston Rockets",
+            "key": "ca8d-utah-jazz-v-ca6b-houston-rockets",
+            "cutoffTime": "2025-03-28T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966991,
+            "home": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Sacramento Kings v Portland Trail Blazers",
+            "key": "ca8b-sacramento-kings-v-ca7d-portland-trail-blazers",
+            "cutoffTime": "2025-03-28T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966864,
+            "home": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Detroit Pistons v Cleveland Cavaliers",
+            "key": "c546-detroit-pistons-v-c53c-cleveland-cavaliers",
+            "cutoffTime": "2025-03-28T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966867,
+            "home": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Brooklyn Nets v LA Clippers",
+            "key": "c525-brooklyn-nets-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-28T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "76",
+            "id": 26006755,
+            "home": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Toronto Raptors v Charlotte Hornets",
+            "key": "c613-toronto-raptors-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-28T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966777,
+            "home": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "MIL Bucks v New York Knicks",
+            "key": "ca77-milwaukee-bucks-v-c5bd-new-york-knicks",
+            "cutoffTime": "2025-03-29T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967032,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v Phoenix Suns",
+            "key": "c5b5-minnesota-timberwolves-v-c5d5-phoenix-suns",
+            "cutoffTime": "2025-03-29T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "73",
+            "id": 26022000,
+            "home": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New Orleans Pelicans v Golden State Warriors",
+            "key": "c5bc-new-orleans-pelicans-v-c569-golden-state-warriors",
+            "cutoffTime": "2025-03-29T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967070,
+            "home": {
+                "name": "Denver Nuggets",
+                "key": "ca64-denver-nuggets",
+                "abbreviation": "DEN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Denver Nuggets v Utah Jazz",
+            "key": "ca64-denver-nuggets-v-ca8d-utah-jazz",
+            "cutoffTime": "2025-03-29T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "73",
+            "id": 26022009,
+            "home": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Orlando Magic v Sacramento Kings",
+            "key": "ca83-orlando-magic-v-ca8b-sacramento-kings",
+            "cutoffTime": "2025-03-29T21:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967047,
+            "home": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Washington Wizards v Brooklyn Nets",
+            "key": "ca88-washington-wizards-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-03-29T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967069,
+            "home": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Philadelphia 76ers v Miami Heat",
+            "key": "c5d3-philadelphia-76ers-v-c5b4-miami-heat",
+            "cutoffTime": "2025-03-29T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "67",
+            "id": 26038385,
+            "home": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "CHI Bulls v Dallas Mavericks",
+            "key": "ca5e-chicago-bulls-v-c545-dallas-mavericks",
+            "cutoffTime": "2025-03-30T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "67",
+            "id": 26038383,
+            "home": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Memphis Grizzlies v LAL Lakers",
+            "key": "c5b2-memphis-grizzlies-v-c5a5-los-angeles-lakers",
+            "cutoffTime": "2025-03-30T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966857,
+            "home": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Oklahoma City Thunder v Indiana Pacers",
+            "key": "c5c2-oklahoma-city-thunder-v-c575-indiana-pacers",
+            "cutoffTime": "2025-03-30T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966936,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v BOS Celtics",
+            "key": "c5e3-san-antonio-spurs-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-30T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967033,
+            "home": {
+                "name": "Cleveland Cavaliers",
+                "key": "c53c-cleveland-cavaliers",
+                "abbreviation": "CLE",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Cleveland Cavaliers v LA Clippers",
+            "key": "c53c-cleveland-cavaliers-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-30T19:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966933,
+            "home": {
+                "name": "New York Knicks",
+                "key": "c5bd-new-york-knicks",
+                "abbreviation": "NYK",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Portland Trail Blazers",
+                "key": "ca7d-portland-trail-blazers",
+                "abbreviation": "POR",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New York Knicks v Portland Trail Blazers",
+            "key": "c5bd-new-york-knicks-v-ca7d-portland-trail-blazers",
+            "cutoffTime": "2025-03-30T22:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966978,
+            "home": {
+                "name": "MIL Bucks",
+                "key": "ca77-milwaukee-bucks",
+                "abbreviation": "MIL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Atlanta Hawks",
+                "key": "ca56-atlanta-hawks",
+                "abbreviation": "ATL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "MIL Bucks v Atlanta Hawks",
+            "key": "ca77-milwaukee-bucks-v-ca56-atlanta-hawks",
+            "cutoffTime": "2025-03-30T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966865,
+            "home": {
+                "name": "Minnesota Timberwolves",
+                "key": "c5b5-minnesota-timberwolves",
+                "abbreviation": "MIN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Detroit Pistons",
+                "key": "c546-detroit-pistons",
+                "abbreviation": "DET",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Minnesota Timberwolves v Detroit Pistons",
+            "key": "c5b5-minnesota-timberwolves-v-c546-detroit-pistons",
+            "cutoffTime": "2025-03-30T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "67",
+            "id": 26038384,
+            "home": {
+                "name": "New Orleans Pelicans",
+                "key": "c5bc-new-orleans-pelicans",
+                "abbreviation": "NOP",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "New Orleans Pelicans v Charlotte Hornets",
+            "key": "c5bc-new-orleans-pelicans-v-ca5d-charlotte-hornets",
+            "cutoffTime": "2025-03-30T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966898,
+            "home": {
+                "name": "San Antonio Spurs",
+                "key": "c5e3-san-antonio-spurs",
+                "abbreviation": "SAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Golden State Warriors",
+                "key": "c569-golden-state-warriors",
+                "abbreviation": "GSW",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "San Antonio Spurs v Golden State Warriors",
+            "key": "c5e3-san-antonio-spurs-v-c569-golden-state-warriors",
+            "cutoffTime": "2025-03-30T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966928,
+            "home": {
+                "name": "Philadelphia 76ers",
+                "key": "c5d3-philadelphia-76ers",
+                "abbreviation": "PHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Toronto Raptors",
+                "key": "c613-toronto-raptors",
+                "abbreviation": "TOR",
+                "nationality": "CAN",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Philadelphia 76ers v Toronto Raptors",
+            "key": "c5d3-philadelphia-76ers-v-c613-toronto-raptors",
+            "cutoffTime": "2025-03-30T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966879,
+            "home": {
+                "name": "Phoenix Suns",
+                "key": "c5d5-phoenix-suns",
+                "abbreviation": "PHX",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Phoenix Suns v Houston Rockets",
+            "key": "c5d5-phoenix-suns-v-ca6b-houston-rockets",
+            "cutoffTime": "2025-03-31T01:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "63",
+            "id": 26051683,
+            "home": {
+                "name": "Charlotte Hornets",
+                "key": "ca5d-charlotte-hornets",
+                "abbreviation": "CHA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Utah Jazz",
+                "key": "ca8d-utah-jazz",
+                "abbreviation": "UTA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Charlotte Hornets v Utah Jazz",
+            "key": "ca5d-charlotte-hornets-v-ca8d-utah-jazz",
+            "cutoffTime": "2025-03-31T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966778,
+            "home": {
+                "name": "Indiana Pacers",
+                "key": "c575-indiana-pacers",
+                "abbreviation": "IND",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Sacramento Kings",
+                "key": "ca8b-sacramento-kings",
+                "abbreviation": "SAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Indiana Pacers v Sacramento Kings",
+            "key": "c575-indiana-pacers-v-ca8b-sacramento-kings",
+            "cutoffTime": "2025-03-31T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966844,
+            "home": {
+                "name": "Orlando Magic",
+                "key": "ca83-orlando-magic",
+                "abbreviation": "ORL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "LA Clippers",
+                "key": "c6dc197-la-clippers",
+                "abbreviation": "LAC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Orlando Magic v LA Clippers",
+            "key": "ca83-orlando-magic-v-c6dc197-la-clippers",
+            "cutoffTime": "2025-03-31T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25966785,
+            "home": {
+                "name": "Washington Wizards",
+                "key": "ca88-washington-wizards",
+                "abbreviation": "WAS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Miami Heat",
+                "key": "c5b4-miami-heat",
+                "abbreviation": "MIA",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Washington Wizards v Miami Heat",
+            "key": "ca88-washington-wizards-v-c5b4-miami-heat",
+            "cutoffTime": "2025-03-31T23:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "92",
+            "id": 25967052,
+            "home": {
+                "name": "Memphis Grizzlies",
+                "key": "c5b2-memphis-grizzlies",
+                "abbreviation": "MEM",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "BOS Celtics",
+                "key": "c523-boston-celtics",
+                "abbreviation": "BOS",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Memphis Grizzlies v BOS Celtics",
+            "key": "c5b2-memphis-grizzlies-v-c523-boston-celtics",
+            "cutoffTime": "2025-03-31T23:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966759,
+            "home": {
+                "name": "Oklahoma City Thunder",
+                "key": "c5c2-oklahoma-city-thunder",
+                "abbreviation": "OKC",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "CHI Bulls",
+                "key": "ca5e-chicago-bulls",
+                "abbreviation": "CHI",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Oklahoma City Thunder v CHI Bulls",
+            "key": "c5c2-oklahoma-city-thunder-v-ca5e-chicago-bulls",
+            "cutoffTime": "2025-04-01T00:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "93",
+            "id": 25966749,
+            "home": {
+                "name": "Dallas Mavericks",
+                "key": "c545-dallas-mavericks",
+                "abbreviation": "DAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Brooklyn Nets",
+                "key": "c525-brooklyn-nets",
+                "abbreviation": "BKN",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "Dallas Mavericks v Brooklyn Nets",
+            "key": "c545-dallas-mavericks-v-c525-brooklyn-nets",
+            "cutoffTime": "2025-04-01T00:30:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        },
+        {
+            "sequence": "58",
+            "id": 26067119,
+            "home": {
+                "name": "LAL Lakers",
+                "key": "c5a5-los-angeles-lakers",
+                "abbreviation": "LAL",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "away": {
+                "name": "Houston Rockets",
+                "key": "ca6b-houston-rockets",
+                "abbreviation": "HOU",
+                "nationality": "USA",
+                "researchId": ""
+            },
+            "players": {},
+            "status": "PRE_TRADING",
+            "markets": {},
+            "name": "LAL Lakers v Houston Rockets",
+            "key": "c5a5-los-angeles-lakers-v-ca6b-houston-rockets",
+            "cutoffTime": "2025-04-01T02:00:00Z",
+            "metadata": {
+                "opinions": {},
+                "opinion": []
+            },
+            "type": "EVENT_TYPE_EVENT"
+        }
+    ],
+    "category": {
+        "name": "USA",
+        "key": "usa"
+    }
+}

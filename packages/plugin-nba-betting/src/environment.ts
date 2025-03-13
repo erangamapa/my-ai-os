@@ -1,29 +1,29 @@
 import { IAgentRuntime } from "@elizaos/core";
 import { z } from "zod";
 
-export const nasaEnvSchema = z.object({
-    NASA_API_KEY: z.string().min(1, "Nasa API key is required"),
+export const nbaBettingEnvSchema = z.object({
+    CB_API_KEY: z.string().min(1, "CB API key is required"),
 });
 
-export type nasaConfig = z.infer<typeof nasaEnvSchema>;
+export type nbaBettingConfig = z.infer<typeof nbaBettingEnvSchema>;
 
-export async function validateNasaConfig(
+export async function validateNBAMoneyLineBettingConfig(
     runtime: IAgentRuntime
-): Promise<nasaConfig> {
+): Promise<nbaBettingConfig> {
     try {
         const config = {
-            NASA_API_KEY: runtime.getSetting("NASA_API_KEY"),
+            CB_API_KEY: runtime.getSetting("CB_API_KEY"),
         };
-        console.log('config: ', config)
-        return nasaEnvSchema.parse(config);
+        console.log("config: ", config);
+        return nbaBettingEnvSchema.parse(config);
     } catch (error) {
-        console.log("error::::", error)
+        console.log("error::::", error);
         if (error instanceof z.ZodError) {
             const errorMessages = error.errors
                 .map((err) => `${err.path.join(".")}: ${err.message}`)
                 .join("\n");
             throw new Error(
-                `Nasa API configuration validation failed:\n${errorMessages}`
+                `CB API configuration validation failed:\n${errorMessages}`
             );
         }
         throw error;
