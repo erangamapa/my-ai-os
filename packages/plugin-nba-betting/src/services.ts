@@ -1,4 +1,11 @@
-import { NBAMoneyLineMarketsResponse } from "./types";
+import { AcceptPriceChange, NBAMoneyLineMarketsResponse, Side } from "./types";
+import { v4 as uuidv4 } from "uuid";
+import {
+    getEventIdFromName,
+    getMarketUrl,
+    getPriceFromEventId,
+    getSideFromTeamName,
+} from "./utils";
 
 const BASE_URL = "https://sports-api-stg.cb.com";
 
@@ -31,5 +38,51 @@ export const createNBABettingService = (apiKey: string) => {
             }
         };
 
-    return { getNBAMoneyLineMarkets };
+    const placeBet = async (
+        eventName: string,
+        stake: string,
+        teamName: string
+    ): Promise<any> => {
+        if (!apiKey) {
+            throw new Error("Invalid parameters");
+        }
+
+        const eventId = getEventIdFromName(eventName);
+        const side = getSideFromTeamName(teamName);
+
+        const payload = {
+            acceptPriceChange: AcceptPriceChange.ALL,
+            currency: "SOL",
+            eventId,
+            marketUrl: getMarketUrl(side),
+            price: getPriceFromEventId(eventId),
+            stake,
+            referenceId: uuidv4(),
+            side,
+        };
+
+        try {
+            const url = `${BASE_URL}/pub/v3/bets/place`;
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-API-Key": apiKey,
+                },
+                body: JSON.stringify(payload),
+            });
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error?.message || response.statusText);
+            }
+
+            const data = await response.json();
+            return data;
+        } catch (error: any) {
+            console.error("CB API Error:", error.message);
+            throw error;
+        }
+    };
+
+    return { getNBAMoneyLineMarkets, placeBet };
 };

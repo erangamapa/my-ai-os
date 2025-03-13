@@ -1,10 +1,11 @@
 import { Plugin } from "@elizaos/core";
 import { getNBAMoneyLineMarketsAction } from "./actions/getNBAMoneyLineMarkets";
+import { placeNBAMoneyLineBet } from "./actions/placeNBAMoneyLineBet";
 
 export const nbaBetting: Plugin = {
     name: "nba betting",
     description: "NBA betting plugin for cb",
-    actions: [getNBAMoneyLineMarketsAction],
+    actions: [getNBAMoneyLineMarketsAction, placeNBAMoneyLineBet],
     // evaluators analyze the situations and actions taken by the agent. they run after each agent action
     // allowing the agent to reflect on what happened and potentially trigger additional actions or modifications
     evaluators: [],

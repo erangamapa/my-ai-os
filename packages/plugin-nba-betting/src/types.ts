@@ -1,3 +1,14 @@
+export enum AcceptPriceChange {
+    NONE = "NONE",
+    ALL = "ALL",
+    BETTER = "BETTER",
+}
+
+export enum Side {
+    BACK = "BACK",
+    LAY = "LAY",
+}
+
 export interface NBAMoneyLineMarketsResponse {
     name: string;
     key: string;
