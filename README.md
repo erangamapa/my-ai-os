@@ -1,8 +1,8 @@
-# Eliza NASA Plugin and Tutorial
+# Eliza CB NBA Betting Plugin and Tutorial
 
-This is the codebase and tutorial for building a NASA Eliza plugin.
+This is the codebase and tutorial for building a CB NBA Betting Eliza plugin.
 
-Plugin code is located at `plugins/nasa-plugin`.
+Plugin code is located at `plugins/CB NBA Betting-plugin`.
 
 ------------------------
 
