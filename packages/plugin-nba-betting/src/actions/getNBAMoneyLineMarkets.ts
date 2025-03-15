@@ -15,6 +15,7 @@ export const getNBAMoneyLineMarketsAction: Action = {
     name: "NBA_MONEY_LINE_MARKETS",
     similes: ["BASKETBALL", "NBA", "BETTING", "SPORTS"],
     description: "Get the NBA Moneyline betting markets.",
+    suppressInitialMessage: true,
     validate: async (runtime: IAgentRuntime) => {
         await validateNBAMoneyLineBettingConfig(runtime);
         return true;
