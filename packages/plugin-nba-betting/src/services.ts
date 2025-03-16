@@ -25,15 +25,10 @@ export const createNBABettingService = (apiKey: string) => {
                         "X-API-Key": apiKey,
                     },
                 });
-                if (!response.ok) {
-                    const error = await response.json();
-                    throw new Error(error?.message || response.statusText);
-                }
 
                 const data = await response.json();
                 return data;
             } catch (error: any) {
-                console.error("CB API Error:", error.message);
                 throw error;
             }
         };
@@ -71,15 +66,10 @@ export const createNBABettingService = (apiKey: string) => {
                 },
                 body: JSON.stringify(payload),
             });
-            if (!response.ok) {
-                const error = await response.json();
-                throw new Error(error?.message || response.statusText);
-            }
 
             const data = await response.json();
             return data;
         } catch (error: any) {
-            console.error("CB API Error:", error.message);
             throw error;
         }
     };
