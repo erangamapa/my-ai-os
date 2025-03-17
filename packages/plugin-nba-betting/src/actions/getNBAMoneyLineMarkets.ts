@@ -32,21 +32,141 @@ export const getNBAMoneyLineMarketsAction: Action = {
 
         try {
             const marketsData = await nbaService.getNBAMoneyLineMarkets();
-            const formattedData = marketsData.events
-                .map((event) => event.name)
-                .join(",");
+
+            // Format each event with name and moneyline prices
+            const formattedEvents = marketsData.events
+                // First filter out OUTRIGHT events
+                .filter((event) => event.type !== "EVENT_TYPE_OUTRIGHT")
+                .map((event) => {
+                    // Extract moneyline market data - correctly using the markets object structure
+                    const moneylineMarket =
+                        event.markets && event.markets["basketball.moneyline"]
+                            ? event.markets["basketball.moneyline"]
+                            : null;
+
+                    // Extract home and away prices if available
+                    let homePriceStr = "N/A";
+                    let awayPriceStr = "N/A";
+
+                    if (moneylineMarket && moneylineMarket.submarkets) {
+                        const submarketKey = "period=ot&period=ft";
+                        const mainSubmarket =
+                            moneylineMarket.submarkets[submarketKey];
+
+                        if (
+                            mainSubmarket &&
+                            Array.isArray(mainSubmarket.selections)
+                        ) {
+                            const homeSelection = mainSubmarket.selections.find(
+                                (s) => s.outcome === "home"
+                            );
+                            const awaySelection = mainSubmarket.selections.find(
+                                (s) => s.outcome === "away"
+                            );
+
+                            if (
+                                homeSelection &&
+                                typeof homeSelection.price === "number"
+                            ) {
+                                homePriceStr = homeSelection.price.toFixed(2);
+                            }
+                            if (
+                                awaySelection &&
+                                typeof awaySelection.price === "number"
+                            ) {
+                                awayPriceStr = awaySelection.price.toFixed(2);
+                            }
+                        }
+                    }
+
+                    // Format the cutoffTime into human readable form
+                    let timeStr = "Time not available";
+                    if (event.cutoffTime) {
+                        const eventDate = new Date(event.cutoffTime);
+                        const now = new Date();
+                        const tomorrow = new Date();
+                        tomorrow.setDate(tomorrow.getDate() + 1);
+
+                        // Format time as hours and minutes (e.g., "4:30 PM")
+                        const timeOptions: Intl.DateTimeFormatOptions = {
+                            hour: "numeric",
+                            minute: "2-digit",
+                            hour12: true,
+                        };
+                        const timeFormatted = eventDate.toLocaleTimeString(
+                            "en-US",
+                            timeOptions
+                        );
+
+                        // Check if the event is today or tomorrow
+                        if (eventDate.toDateString() === now.toDateString()) {
+                            timeStr = `Today at ${timeFormatted}`;
+                        } else if (
+                            eventDate.toDateString() === tomorrow.toDateString()
+                        ) {
+                            timeStr = `Tomorrow at ${timeFormatted}`;
+                        } else {
+                            // Format like "Saturday 11 PM" or "31st March, 11 PM"
+                            const isWithinAWeek =
+                                eventDate.getTime() - now.getTime() <
+                                7 * 24 * 60 * 60 * 1000;
+
+                            if (isWithinAWeek) {
+                                // Format as day of week
+                                const dayOptions: Intl.DateTimeFormatOptions = {
+                                    weekday: "long",
+                                };
+                                const dayFormatted =
+                                    eventDate.toLocaleDateString(
+                                        "en-US",
+                                        dayOptions
+                                    );
+                                timeStr = `${dayFormatted} at ${timeFormatted}`;
+                            } else {
+                                // Format as day and month
+                                const dateOptions: Intl.DateTimeFormatOptions =
+                                    {
+                                        day: "numeric",
+                                        month: "long",
+                                    };
+                                const dateFormatted =
+                                    eventDate.toLocaleDateString(
+                                        "en-US",
+                                        dateOptions
+                                    );
+                                timeStr = `${dateFormatted} at ${timeFormatted}`;
+                            }
+                        }
+                    }
+
+                    return {
+                        formattedText: `On ${timeStr}, **${event.name}** with Moneyline odds **${homePriceStr}** and **${awayPriceStr}** respectively`,
+                        hasValidOdds:
+                            homePriceStr !== "N/A" && awayPriceStr !== "N/A",
+                    };
+                })
+                // Filter out events with N/A odds
+                .filter((item) => item.hasValidOdds)
+                .map((item) => item.formattedText);
+
             elizaLogger.success(`Successfully fetched NBA Moneyline markets`);
+
             if (callback) {
-                callback({
-                    text: `Here are the current NBA Moneyline betting markets: ${formattedData}`,
-                });
+                if (formattedEvents.length === 0) {
+                    callback({
+                        text: `I couldn't find any NBA Moneyline betting markets with available odds right now.`,
+                    });
+                } else {
+                    callback({
+                        text: `Here are the current NBA Moneyline betting markets:\n${formattedEvents.join("\n")}`,
+                    });
+                }
                 return true;
             }
         } catch (error: any) {
             elizaLogger.error("Error in NBA plugin handler:", error);
             callback({
-                text: `Error fetching NBA Moneyline markets: ${error.message}`,
-                content: { error: error.message },
+                text: `I couldn't get the markets from cb. Let's try again later.`,
             });
             return false;
         }
