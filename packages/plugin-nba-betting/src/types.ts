@@ -1,3 +1,22 @@
+export interface PlaceBetOutput {
+    referenceId: string;
+    price: string;
+    eventId: string;
+    marketUrl: string;
+    side: string;
+    currency: string;
+    stake: string;
+    createTime: string;
+    status: string;
+    returnAmount: string;
+    eventName: string;
+    sportsKey: string;
+    competitionId: string;
+    categoryKey: string;
+    customerReference: string;
+    error: string;
+}
+
 export enum AcceptPriceChange {
     NONE = "NONE",
     ALL = "ALL",
@@ -5,8 +24,8 @@ export enum AcceptPriceChange {
 }
 
 export enum Side {
-    BACK = "BACK",
-    LAY = "LAY",
+    home = "home",
+    away = "away",
 }
 
 export type Sport = {

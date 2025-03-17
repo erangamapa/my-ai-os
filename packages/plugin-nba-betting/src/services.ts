@@ -1,4 +1,9 @@
-import { AcceptPriceChange, NBAMoneyLineMarketsResponse, Side } from "./types";
+import {
+    AcceptPriceChange,
+    NBAMoneyLineMarketsResponse,
+    PlaceBetOutput,
+    Side,
+} from "./types";
 import { v4 as uuidv4 } from "uuid";
 import {
     getEventIdFromName,
@@ -6,6 +11,7 @@ import {
     getPriceFromEventId,
     getSideFromTeamName,
 } from "./utils";
+import { elizaLogger } from "@elizaos/core";
 
 const BASE_URL = "https://sports-api-stg.cb.com";
 
@@ -36,7 +42,7 @@ export const createNBABettingService = (apiKey: string) => {
     const placeBet = async (
         eventId: string,
         stake: string,
-        side: Side,
+        outcome: Side,
         price: string
     ): Promise<any> => {
         if (!apiKey) {
@@ -45,13 +51,13 @@ export const createNBABettingService = (apiKey: string) => {
 
         const payload = {
             acceptPriceChange: AcceptPriceChange.ALL,
-            currency: "SOL",
+            currency: "MATIC",
             eventId,
-            marketUrl: `basketball.moneyline/${Side[side]}`,
+            marketUrl: `basketball.moneyline/${Side[outcome]}`,
             price,
             stake,
             referenceId: uuidv4(),
-            side,
+            outcome,
         };
 
         try {
@@ -66,7 +72,7 @@ export const createNBABettingService = (apiKey: string) => {
             });
 
             const data = await response.json();
-            return data;
+            return data as PlaceBetOutput;
         } catch (error: any) {
             throw error;
         }

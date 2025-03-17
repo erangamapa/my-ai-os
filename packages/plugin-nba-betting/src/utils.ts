@@ -19,5 +19,5 @@ export const getPriceFromEventId = (eventId: number) => {
 };
 
 export const getSideFromTeamName = (teamName: string) => {
-    return teamName === "something" ? Side.BACK : Side.LAY;
+    return teamName === "something" ? Side.home : Side.away;
 };

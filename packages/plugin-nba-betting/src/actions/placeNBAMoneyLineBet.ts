@@ -125,25 +125,41 @@ export const placeNBAMoneyLineBet: Action = {
             );
             elizaLogger.success(eventId);
             elizaLogger.success(stake);
-            elizaLogger.success(side);
+            elizaLogger.success(outcome);
             elizaLogger.success(price);
             elizaLogger.success(`========= end =========`);
 
-            await nbaService.placeBet(eventId, `${stake}`, side, price);
+            const data = await nbaService.placeBet(
+                eventId,
+                `${stake}`,
+                outcome as Side,
+                price
+            );
+            elizaLogger.success(
+                `========== Returned value from placeBet ============`
+            );
+            elizaLogger.success(JSON.stringify(data));
             elizaLogger.success(`Successfully placed bet on ${teamName}`);
 
             // Create a URL to a bet tracking page (example URL)
             const url = `https://stg.cb.com/share/en/bets/647ce9ec-0119-4159-8a41-650b01fff05c`;
+            if (data.status === "ACCEPTED") {
+                callback({
+                    text: `Successfully placed a bet of $${stake} on ${teamName} in the ${eventName} game`,
+                    url,
+                });
+                return true;
+            }
 
+            elizaLogger.error("Error in NBA plugin handler:");
             callback({
-                text: `Successfully placed a bet of $${stake} on ${teamName} in the ${eventName} game`,
-                url,
+                text: `Sorry. I am unable to place the bet. Please try again later.`,
             });
-            return true;
+            return false;
         } catch (error: any) {
             elizaLogger.error("Error in NBA plugin handler:", error);
             callback({
-                text: `Failed to place bet`,
+                text: `Sorry. I am unable to place the bet. Please try again later.`,
             });
             return false;
         }
