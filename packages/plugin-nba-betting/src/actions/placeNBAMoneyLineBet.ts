@@ -8,7 +8,10 @@ import {
     State,
 } from "@elizaos/core";
 import { validateNBAMoneyLineBettingConfig } from "../environment";
-import { getNBAMoneyLineBettingMarketsExamples } from "../examples";
+import {
+    getNBAMoneyLineBettingMarketsExamples,
+    placeNBABetExamples,
+} from "../examples";
 import { createNBABettingService } from "../services";
 import { extractEventName } from "../utils/extractEventName";
 import { extractTeamName } from "../utils/extractTeamName";
@@ -64,5 +67,5 @@ export const placeNBAMoneyLineBet: Action = {
             return false;
         }
     },
-    examples: getNBAMoneyLineBettingMarketsExamples as ActionExample[][],
+    examples: placeNBABetExamples as ActionExample[][],
 } as Action;
