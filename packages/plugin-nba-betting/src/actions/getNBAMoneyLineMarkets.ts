@@ -10,6 +10,7 @@ import {
 import { validateNBAMoneyLineBettingConfig } from "../environment";
 import { getNBAMoneyLineBettingMarketsExamples } from "../examples";
 import { createNBABettingService } from "../services";
+import { sanitizeMarketResponse } from "../utils/sanitizeMarketResponse";
 
 export const getNBAMoneyLineMarketsAction: Action = {
     name: "NBA_MONEY_LINE_MARKETS",
@@ -31,12 +32,13 @@ export const getNBAMoneyLineMarketsAction: Action = {
         const nbaService = createNBABettingService(config.CB_API_KEY);
 
         try {
-            const marketsData = await nbaService.getNBAMoneyLineMarkets();
+            const rawMarketsData = await nbaService.getNBAMoneyLineMarkets();
+
+            // Apply sanitization to filter out OUTRIGHT events and empty markets
+            const marketsData = sanitizeMarketResponse(rawMarketsData);
 
             // Format each event with name and moneyline prices
             const formattedEvents = marketsData.events
-                // First filter out OUTRIGHT events
-                .filter((event) => event.type !== "EVENT_TYPE_OUTRIGHT")
                 .map((event) => {
                     // Extract moneyline market data - correctly using the markets object structure
                     const moneylineMarket =
@@ -154,7 +156,7 @@ export const getNBAMoneyLineMarketsAction: Action = {
             if (callback) {
                 if (formattedEvents.length === 0) {
                     callback({
-                        text: `I couldn't find any NBA Moneyline betting markets with available odds right now.`,
+                        text: `I couldn't find any NBA Moneyline betting markets with available odds right now. Let's try again later.`,
                     });
                 } else {
                     callback({

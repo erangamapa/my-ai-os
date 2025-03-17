@@ -4,7 +4,7 @@ This is the codebase and tutorial for building a CB NBA Betting Eliza plugin.
 
 Plugin code is located at `plugins/CB NBA Betting-plugin`.
 
-------------------------
+---
 
 # Eliza 🤖
 

@@ -34,23 +34,21 @@ export const createNBABettingService = (apiKey: string) => {
         };
 
     const placeBet = async (
-        eventName: string,
+        eventId: string,
         stake: string,
-        teamName: string
+        side: Side,
+        price: string
     ): Promise<any> => {
         if (!apiKey) {
             throw new Error("Invalid parameters");
         }
 
-        const eventId = getEventIdFromName(eventName);
-        const side = getSideFromTeamName(teamName);
-
         const payload = {
             acceptPriceChange: AcceptPriceChange.ALL,
             currency: "SOL",
             eventId,
-            marketUrl: getMarketUrl(side),
-            price: getPriceFromEventId(eventId),
+            marketUrl: `basketball.moneyline/${Side[side]}`,
+            price,
             stake,
             referenceId: uuidv4(),
             side,

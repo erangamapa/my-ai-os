@@ -9,7 +9,19 @@ export enum Side {
     LAY = "LAY",
 }
 
+export type Sport = {
+    name: string;
+    key: string;
+};
+
+export type Category = {
+    name: string;
+    key: string;
+};
+
 export interface NBAMoneyLineMarketsResponse {
+    sport: Sport;
+    category: Category;
     name: string;
     key: string;
     events: Event[];
@@ -65,7 +77,7 @@ export interface Selection {
 }
 
 export interface Metadata {
-    opinions: Opinions;
+    opinions: any;
     opinion: any[];
 }
 
