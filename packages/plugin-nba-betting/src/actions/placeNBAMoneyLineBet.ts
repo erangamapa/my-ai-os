@@ -8,16 +8,12 @@ import {
     State,
 } from "@elizaos/core";
 import { validateNBAMoneyLineBettingConfig } from "../environment";
-import {
-    getNBAMoneyLineBettingMarketsExamples,
-    placeNBABetExamples,
-} from "../examples";
+import { placeNBABetExamples } from "../examples";
 import { createNBABettingService } from "../services";
 import { Side } from "../types";
-import { extractEventName } from "../utils/extractEventName";
-import { extractTeamName } from "../utils/extractTeamName";
 import { extractStake } from "../utils/extractStake";
 import { sanitizeMarketResponse } from "../utils/sanitizeMarketResponse";
+import { extractTeamData } from "../referenceData";
 
 export const placeNBAMoneyLineBet: Action = {
     name: "PLACE_NBA_BET",
@@ -39,8 +35,7 @@ export const placeNBAMoneyLineBet: Action = {
         const nbaService = createNBABettingService(config.CB_API_KEY);
         const text = message.content.text;
 
-        const eventName = extractEventName(text);
-        const teamName = extractTeamName(text);
+        const { eventName, teamName } = extractTeamData(message.content.text);
         const stake = extractStake(text);
 
         elizaLogger.success(`========= Data from text input =========`);
