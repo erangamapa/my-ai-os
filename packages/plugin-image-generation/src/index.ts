@@ -7,6 +7,7 @@ import {
     Plugin,
     State,
     ModelClass,
+    ModelProviderName,
 } from "@elizaos/core";
 import { generateImage } from "@elizaos/core";
 import fs from "fs";
@@ -185,141 +186,156 @@ Ensure that your prompt is detailed, vivid, and incorporates all the elements me
         const imageSettings = runtime.character?.settings?.imageSettings || {};
         elizaLogger.log("Image settings:", imageSettings);
 
+        // Set the imageModelProvider to TOGETHER if TOGETHER_API_KEY is available
+        const originalImageModelProvider = runtime.imageModelProvider;
+        if (runtime.getSetting("TOGETHER_API_KEY")) {
+            elizaLogger.log("Using Together AI for image generation");
+            runtime.imageModelProvider = ModelProviderName.TOGETHER;
+        }
+
         const res: { image: string; caption: string }[] = [];
 
         elizaLogger.log("Generating image with prompt:", imagePrompt);
-        const images = await generateImage(
-            {
-                prompt: imagePrompt,
-                width: options.width || imageSettings.width || 1024,
-                height: options.height || imageSettings.height || 1024,
-                ...(options.count != null || imageSettings.count != null
-                    ? { count: options.count || imageSettings.count || 1 }
-                    : {}),
-                ...(options.negativePrompt != null ||
-                imageSettings.negativePrompt != null
-                    ? {
-                          negativePrompt:
-                              options.negativePrompt ||
-                              imageSettings.negativePrompt,
-                      }
-                    : {}),
-                ...(options.numIterations != null ||
-                imageSettings.numIterations != null
-                    ? {
-                          numIterations:
-                              options.numIterations ||
-                              imageSettings.numIterations,
-                      }
-                    : {}),
-                ...(options.guidanceScale != null ||
-                imageSettings.guidanceScale != null
-                    ? {
-                          guidanceScale:
-                              options.guidanceScale ||
-                              imageSettings.guidanceScale,
-                      }
-                    : {}),
-                ...(options.seed != null || imageSettings.seed != null
-                    ? { seed: options.seed || imageSettings.seed }
-                    : {}),
-                ...(options.modelId != null || imageSettings.modelId != null
-                    ? { modelId: options.modelId || imageSettings.modelId }
-                    : {}),
-                ...(options.jobId != null || imageSettings.jobId != null
-                    ? { jobId: options.jobId || imageSettings.jobId }
-                    : {}),
-                ...(options.stylePreset != null ||
-                imageSettings.stylePreset != null
-                    ? {
-                          stylePreset:
-                              options.stylePreset || imageSettings.stylePreset,
-                      }
-                    : {}),
-                ...(options.hideWatermark != null ||
-                imageSettings.hideWatermark != null
-                    ? {
-                          hideWatermark:
-                              options.hideWatermark ||
-                              imageSettings.hideWatermark,
-                      }
-                    : {}),
-            },
-            runtime
-        );
-
-        if (images.success && images.data && images.data.length > 0) {
-            elizaLogger.log(
-                "Image generation successful, number of images:",
-                images.data.length
+        try {
+            const images = await generateImage(
+                {
+                    prompt: imagePrompt,
+                    width: options.width || imageSettings.width || 1024,
+                    height: options.height || imageSettings.height || 1024,
+                    ...(options.count != null || imageSettings.count != null
+                        ? { count: options.count || imageSettings.count || 1 }
+                        : {}),
+                    ...(options.negativePrompt != null ||
+                    imageSettings.negativePrompt != null
+                        ? {
+                              negativePrompt:
+                                  options.negativePrompt ||
+                                  imageSettings.negativePrompt,
+                          }
+                        : {}),
+                    ...(options.numIterations != null ||
+                    imageSettings.numIterations != null
+                        ? {
+                              numIterations:
+                                  options.numIterations ||
+                                  imageSettings.numIterations,
+                          }
+                        : {}),
+                    ...(options.guidanceScale != null ||
+                    imageSettings.guidanceScale != null
+                        ? {
+                              guidanceScale:
+                                  options.guidanceScale ||
+                                  imageSettings.guidanceScale,
+                          }
+                        : {}),
+                    ...(options.seed != null || imageSettings.seed != null
+                        ? { seed: options.seed || imageSettings.seed }
+                        : {}),
+                    ...(options.modelId != null || imageSettings.modelId != null
+                        ? { modelId: options.modelId || imageSettings.modelId }
+                        : {}),
+                    ...(options.jobId != null || imageSettings.jobId != null
+                        ? { jobId: options.jobId || imageSettings.jobId }
+                        : {}),
+                    ...(options.stylePreset != null ||
+                    imageSettings.stylePreset != null
+                        ? {
+                              stylePreset:
+                                  options.stylePreset ||
+                                  imageSettings.stylePreset,
+                          }
+                        : {}),
+                    ...(options.hideWatermark != null ||
+                    imageSettings.hideWatermark != null
+                        ? {
+                              hideWatermark:
+                                  options.hideWatermark ||
+                                  imageSettings.hideWatermark,
+                          }
+                        : {}),
+                },
+                runtime
             );
-            for (let i = 0; i < images.data.length; i++) {
-                const image = images.data[i];
 
-                // Save the image and get filepath
-                const filename = `generated_${Date.now()}_${i}`;
-
-                // Choose save function based on image data format
-                const filepath = image.startsWith("http")
-                    ? await saveHeuristImage(image, filename)
-                    : saveBase64Image(image, filename);
-
-                elizaLogger.log(`Processing image ${i + 1}:`, filename);
-
-                //just dont even add a caption or a description just have it generate & send
-                /*
-                try {
-                    const imageService = runtime.getService(ServiceType.IMAGE_DESCRIPTION);
-                    if (imageService && typeof imageService.describeImage === 'function') {
-                        const caption = await imageService.describeImage({ imageUrl: filepath });
-                        captionText = caption.description;
-                        captionTitle = caption.title;
-                    }
-                } catch (error) {
-                    elizaLogger.error("Caption generation failed, using default caption:", error);
-                }*/
-
-                const _caption = "...";
-                /*= await generateCaption(
-                    {
-                        imageUrl: image,
-                    },
-                    runtime
-                );*/
-
-                res.push({ image: filepath, caption: "..." }); //caption.title });
-
+            if (images.success && images.data && images.data.length > 0) {
                 elizaLogger.log(
-                    `Generated caption for image ${i + 1}:`,
-                    "..." //caption.title
+                    "Image generation successful, number of images:",
+                    images.data.length
                 );
-                //res.push({ image: image, caption: caption.title });
+                for (let i = 0; i < images.data.length; i++) {
+                    const image = images.data[i];
 
-                callback(
-                    {
-                        text: "...", //caption.description,
-                        attachments: [
-                            {
-                                id: crypto.randomUUID(),
-                                url: filepath,
-                                title: "Generated image",
-                                source: "imageGeneration",
-                                description: "...", //caption.title,
-                                text: "...", //caption.description,
-                                contentType: "image/png",
-                            },
-                        ],
-                    },
-                    [
+                    // Save the image and get filepath
+                    const filename = `generated_${Date.now()}_${i}`;
+
+                    // Choose save function based on image data format
+                    const filepath = image.startsWith("http")
+                        ? await saveHeuristImage(image, filename)
+                        : saveBase64Image(image, filename);
+
+                    elizaLogger.log(`Processing image ${i + 1}:`, filename);
+
+                    //just dont even add a caption or a description just have it generate & send
+                    /*
+                    try {
+                        const imageService = runtime.getService(ServiceType.IMAGE_DESCRIPTION);
+                        if (imageService && typeof imageService.describeImage === 'function') {
+                            const caption = await imageService.describeImage({ imageUrl: filepath });
+                            captionText = caption.description;
+                            captionTitle = caption.title;
+                        }
+                    } catch (error) {
+                        elizaLogger.error("Caption generation failed, using default caption:", error);
+                    }*/
+
+                    const _caption = "...";
+                    /*= await generateCaption(
                         {
-                            attachment: filepath,
-                            name: `${filename}.png`,
+                            imageUrl: image,
                         },
-                    ]
+                        runtime
+                    );*/
+
+                    res.push({ image: filepath, caption: "..." }); //caption.title });
+
+                    elizaLogger.log(
+                        `Generated caption for image ${i + 1}:`,
+                        "..." //caption.title
+                    );
+                    //res.push({ image: image, caption: caption.title });
+
+                    callback(
+                        {
+                            text: "...", //caption.description,
+                            attachments: [
+                                {
+                                    id: crypto.randomUUID(),
+                                    url: filepath,
+                                    title: "Generated image",
+                                    source: "imageGeneration",
+                                    description: "...", //caption.title,
+                                    text: "...", //caption.description,
+                                    contentType: "image/png",
+                                },
+                            ],
+                        },
+                        [
+                            {
+                                attachment: filepath,
+                                name: `${filename}.png`,
+                            },
+                        ]
+                    );
+                }
+            } else {
+                elizaLogger.error(
+                    "Image generation failed or returned no data."
                 );
             }
-        } else {
-            elizaLogger.error("Image generation failed or returned no data.");
+        } finally {
+            // Restore the original imageModelProvider
+            runtime.imageModelProvider = originalImageModelProvider;
         }
     },
     examples: [

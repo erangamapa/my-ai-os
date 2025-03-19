@@ -8,6 +8,8 @@ import {
     ModelClass,
     generateObject,
     truncateToCompleteSentence,
+    ModelProviderName,
+    generateText,
 } from "@elizaos/core";
 import { Scraper } from "agent-twitter-client";
 import { tweetTemplate } from "../templates";
@@ -26,34 +28,64 @@ async function composeTweet(
             template: tweetTemplate,
         });
 
-        const tweetContentObject = await generateObject({
-            runtime,
-            context,
-            modelClass: ModelClass.SMALL,
-            schema: TweetSchema,
-            stop: ["\n"],
-        });
+        let tweetContent = "";
 
-        if (!isTweetContent(tweetContentObject.object)) {
-            elizaLogger.error(
-                "Invalid tweet content:",
-                tweetContentObject.object
+        try {
+            // Try using generateObject first
+            const tweetContentObject = await generateObject({
+                runtime,
+                context,
+                modelClass: ModelClass.SMALL,
+                schema: TweetSchema,
+                stop: ["\n"],
+            });
+
+            if (isTweetContent(tweetContentObject.object)) {
+                tweetContent = tweetContentObject.object.text.trim();
+            } else {
+                elizaLogger.error(
+                    "Invalid tweet content from generateObject:",
+                    tweetContentObject.object
+                );
+                throw new Error("Invalid tweet content format");
+            }
+        } catch (error) {
+            // If generateObject fails (e.g., for unsupported providers like hyperbolic),
+            // fall back to generateText
+            elizaLogger.warn(
+                "Falling back to generateText due to error:",
+                error
             );
-            return;
-        }
 
-        let trimmedContent = tweetContentObject.object.text.trim();
+            tweetContent = await generateText({
+                runtime,
+                context:
+                    context +
+                    "\n\nWrite a concise tweet (under 280 characters):",
+                modelClass: ModelClass.SMALL,
+                stop: ["\n", "\n\n"],
+            });
+
+            // Clean up the response
+            tweetContent = tweetContent.trim();
+        }
 
         // Truncate the content to the maximum tweet length specified in the environment settings.
         const maxTweetLength = runtime.getSetting("MAX_TWEET_LENGTH");
         if (maxTweetLength) {
-            trimmedContent = truncateToCompleteSentence(
-                trimmedContent,
+            tweetContent = truncateToCompleteSentence(
+                tweetContent,
                 Number(maxTweetLength)
+            );
+        } else {
+            // Default truncation to standard tweet length if no setting
+            tweetContent = truncateToCompleteSentence(
+                tweetContent,
+                DEFAULT_MAX_TWEET_LENGTH
             );
         }
 
-        return trimmedContent;
+        return tweetContent;
     } catch (error) {
         elizaLogger.error("Error composing tweet:", error);
         throw error;
@@ -154,13 +186,30 @@ export const postAction: Action = {
         message: Memory,
         state?: State
     ) => {
-        const username = runtime.getSetting("TWITTER_USERNAME");
-        const password = runtime.getSetting("TWITTER_PASSWORD");
-        const email = runtime.getSetting("TWITTER_EMAIL");
-        const hasCredentials = !!username && !!password && !!email;
-        elizaLogger.log(`Has credentials: ${hasCredentials}`);
+        try {
+            // Check for Twitter credentials
+            const username = runtime.getSetting("TWITTER_USERNAME");
+            const password = runtime.getSetting("TWITTER_PASSWORD");
+            const email = runtime.getSetting("TWITTER_EMAIL");
+            const hasCredentials = !!username && !!password && !!email;
+            elizaLogger.log(`Has Twitter credentials: ${hasCredentials}`);
 
-        return hasCredentials;
+            if (!hasCredentials) {
+                return false;
+            }
+
+            // Check if the model provider is supported
+            const modelProvider = runtime.modelProvider;
+            elizaLogger.log(`Current model provider: ${modelProvider}`);
+
+            // Even if we're using Hyperbolic, we have a fallback mechanism in place
+            // so we can return true for validation
+
+            return true;
+        } catch (error) {
+            elizaLogger.error("Error validating Twitter action:", error);
+            return false;
+        }
     },
     handler: async (
         runtime: IAgentRuntime,
@@ -168,8 +217,21 @@ export const postAction: Action = {
         state?: State
     ): Promise<boolean> => {
         try {
+            // Log runtime model provider for debugging
+            elizaLogger.log(`Using model provider: ${runtime.modelProvider}`);
+
             // Generate tweet content using context
-            const tweetContent = await composeTweet(runtime, message, state);
+            elizaLogger.log("Attempting to compose tweet...");
+            let tweetContent;
+            try {
+                tweetContent = await composeTweet(runtime, message, state);
+            } catch (composeError) {
+                elizaLogger.error(
+                    "Error in composeTweet function:",
+                    composeError
+                );
+                return false;
+            }
 
             if (!tweetContent) {
                 elizaLogger.error("No content generated for tweet");
@@ -189,9 +251,20 @@ export const postAction: Action = {
                 return true;
             }
 
-            return await postTweet(runtime, tweetContent);
+            // Post the tweet
+            try {
+                return await postTweet(runtime, tweetContent);
+            } catch (postError) {
+                elizaLogger.error("Error in postTweet function:", postError);
+                return false;
+            }
         } catch (error) {
-            elizaLogger.error("Error in post action:", error);
+            elizaLogger.error("Error in post action:", {
+                message: error.message,
+                stack: error.stack,
+                name: error.name,
+                cause: error.cause,
+            });
             return false;
         }
     },

@@ -1,20 +1,14 @@
 import { ModelProviderName, Clients } from "@elizaos/core";
 import { nbaBetting } from "@elizaos/plugin-nba-betting";
 import { twitterPlugin } from "@elizaos/plugin-twitter";
-import { webSearchPlugin } from "@elizaos/plugin-web-search";
 import { imageGenerationPlugin } from "@elizaos/plugin-image-generation";
 
 export const mainCharacter = {
     name: "Agent Hoopz",
     clients: [Clients.TWITTER],
     modelProvider: ModelProviderName.HYPERBOLIC,
-    imageProvider: ModelProviderName.HYPERBOLIC,
-    plugins: [
-        nbaBetting,
-        twitterPlugin,
-        webSearchPlugin,
-        imageGenerationPlugin,
-    ],
+    imageProvider: ModelProviderName.TOGETHER,
+    plugins: [imageGenerationPlugin, twitterPlugin, nbaBetting],
     settings: {
         voice: {
             model: "en_US-john-medium",
