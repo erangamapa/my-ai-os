@@ -13,6 +13,51 @@ import { generateImage } from "@elizaos/core";
 import fs from "fs";
 import path from "path";
 import { validateImageGenConfig } from "./environment";
+import { v2 as cloudinary } from "cloudinary";
+
+export async function validateCloudinaryConfig(
+    runtime: IAgentRuntime
+): Promise<boolean> {
+    const cloudName = runtime.getSetting("CLOUDINARY_CLOUD_NAME");
+    const apiKey = runtime.getSetting("CLOUDINARY_API_KEY");
+    const apiSecret = runtime.getSetting("CLOUDINARY_API_SECRET");
+
+    if (!cloudName || !apiKey || !apiSecret) {
+        elizaLogger.error(
+            "Missing Cloudinary configuration. Please set CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET."
+        );
+        return false;
+    }
+
+    // Configure Cloudinary
+    cloudinary.config({
+        cloud_name: cloudName,
+        api_key: apiKey,
+        api_secret: apiSecret,
+    });
+
+    return true;
+}
+
+export async function uploadToCloudinary(
+    filePath: string,
+    filename: string
+): Promise<string> {
+    try {
+        elizaLogger.log(`Uploading image to Cloudinary: ${filename}`);
+        const result = await cloudinary.uploader.upload(filePath, {
+            public_id: filename,
+            overwrite: true,
+            resource_type: "image",
+        });
+
+        elizaLogger.log(`Cloudinary upload successful: ${result.secure_url}`);
+        return result.secure_url;
+    } catch (error) {
+        elizaLogger.error(`Cloudinary upload failed: ${error}`);
+        throw error;
+    }
+}
 
 export function saveBase64Image(base64Data: string, filename: string): string {
     // Create generatedImages directory if it doesn't exist
@@ -80,6 +125,7 @@ const imageGeneration: Action = {
     suppressInitialMessage: true,
     validate: async (runtime: IAgentRuntime, _message: Memory) => {
         await validateImageGenConfig(runtime);
+        const cloudinaryConfigValid = await validateCloudinaryConfig(runtime);
 
         const anthropicApiKeyOk = !!runtime.getSetting("ANTHROPIC_API_KEY");
         const nineteenAiApiKeyOk = !!runtime.getSetting("NINETEEN_AI_API_KEY");
@@ -93,14 +139,15 @@ const imageGeneration: Action = {
         );
 
         return (
-            anthropicApiKeyOk ||
-            togetherApiKeyOk ||
-            heuristApiKeyOk ||
-            falApiKeyOk ||
-            openAiApiKeyOk ||
-            veniceApiKeyOk ||
-            nineteenAiApiKeyOk ||
-            livepeerGatewayUrlOk
+            cloudinaryConfigValid &&
+            (anthropicApiKeyOk ||
+                togetherApiKeyOk ||
+                heuristApiKeyOk ||
+                falApiKeyOk ||
+                openAiApiKeyOk ||
+                veniceApiKeyOk ||
+                nineteenAiApiKeyOk ||
+                livepeerGatewayUrlOk)
         );
     },
     handler: async (
@@ -193,7 +240,8 @@ Ensure that your prompt is detailed, vivid, and incorporates all the elements me
             runtime.imageModelProvider = ModelProviderName.TOGETHER;
         }
 
-        const res: { image: string; caption: string }[] = [];
+        const res: { image: string; cloudinaryUrl: string; caption: string }[] =
+            [];
 
         elizaLogger.log("Generating image with prompt:", imagePrompt);
         try {
@@ -276,57 +324,59 @@ Ensure that your prompt is detailed, vivid, and incorporates all the elements me
 
                     elizaLogger.log(`Processing image ${i + 1}:`, filename);
 
-                    //just dont even add a caption or a description just have it generate & send
-                    /*
-                    try {
-                        const imageService = runtime.getService(ServiceType.IMAGE_DESCRIPTION);
-                        if (imageService && typeof imageService.describeImage === 'function') {
-                            const caption = await imageService.describeImage({ imageUrl: filepath });
-                            captionText = caption.description;
-                            captionTitle = caption.title;
-                        }
-                    } catch (error) {
-                        elizaLogger.error("Caption generation failed, using default caption:", error);
-                    }*/
+                    // Upload to Cloudinary
+                    const cloudinaryUrl = await uploadToCloudinary(
+                        filepath,
+                        filename
+                    );
+                    elizaLogger.log(`Uploaded to Cloudinary: ${cloudinaryUrl}`);
 
                     const _caption = "...";
-                    /*= await generateCaption(
-                        {
-                            imageUrl: image,
-                        },
-                        runtime
-                    );*/
 
-                    res.push({ image: filepath, caption: "..." }); //caption.title });
+                    res.push({
+                        image: filepath,
+                        cloudinaryUrl: cloudinaryUrl,
+                        caption: "...",
+                    });
 
                     elizaLogger.log(
                         `Generated caption for image ${i + 1}:`,
-                        "..." //caption.title
+                        "..."
                     );
-                    //res.push({ image: image, caption: caption.title });
 
                     callback(
                         {
-                            text: "...", //caption.description,
+                            text: "...",
                             attachments: [
                                 {
                                     id: crypto.randomUUID(),
-                                    url: filepath,
+                                    url: cloudinaryUrl,
                                     title: "Generated image",
                                     source: "imageGeneration",
-                                    description: "...", //caption.title,
-                                    text: "...", //caption.description,
+                                    description: "...",
+                                    text: "...",
                                     contentType: "image/png",
                                 },
                             ],
                         },
                         [
                             {
-                                attachment: filepath,
+                                attachment: cloudinaryUrl,
                                 name: `${filename}.png`,
                             },
                         ]
                     );
+
+                    // Optionally delete the local file after uploading to Cloudinary
+                    try {
+                        fs.unlinkSync(filepath);
+                        elizaLogger.log(`Deleted local file: ${filepath}`);
+                    } catch (error) {
+                        elizaLogger.error(
+                            `Failed to delete local file: ${filepath}`,
+                            error
+                        );
+                    }
                 }
             } else {
                 elizaLogger.error(
