@@ -142,7 +142,7 @@ export const getNBAMoneyLineMarketsAction: Action = {
                     }
 
                     return {
-                        formattedText: `On ${timeStr}, **${event.name}** with Moneyline odds **${homePriceStr}** and **${awayPriceStr}** respectively`,
+                        formattedText: `On ${timeStr}, ${event.name} with Moneyline odds ${homePriceStr} and ${awayPriceStr} respectively`,
                         hasValidOdds:
                             homePriceStr !== "N/A" && awayPriceStr !== "N/A",
                     };
