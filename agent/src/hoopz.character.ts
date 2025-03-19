@@ -1,6 +1,5 @@
 import { ModelProviderName, Clients } from "@elizaos/core";
 import { nbaBetting } from "@elizaos/plugin-nba-betting";
-import { twitterPlugin } from "@elizaos/plugin-twitter";
 import { imageGenerationPlugin } from "@elizaos/plugin-image-generation";
 
 export const mainCharacter = {
@@ -8,7 +7,7 @@ export const mainCharacter = {
     clients: [Clients.TWITTER],
     modelProvider: ModelProviderName.HYPERBOLIC,
     imageProvider: ModelProviderName.TOGETHER,
-    plugins: [imageGenerationPlugin, twitterPlugin, nbaBetting],
+    plugins: [imageGenerationPlugin, nbaBetting],
     settings: {
         voice: {
             model: "en_US-john-medium",
