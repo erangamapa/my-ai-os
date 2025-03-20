@@ -4,11 +4,11 @@
 
 @layer base {
     :root {
-        --background: 270 15% 99%;
+        --background: 270 15% 99% / 0.7;
         --foreground: 270 10% 20%;
-        --card: 270 30% 97%;
+        --card: 270 30% 97% / 0.8;
         --card-foreground: 270 10% 20%;
-        --popover: 270 15% 99%;
+        --popover: 270 15% 99% / 0.9;
         --popover-foreground: 270 10% 20%;
         --primary: 270 70% 50%;
         --primary-foreground: 0 0% 98%;
@@ -24,7 +24,7 @@
         --input: 240 5.9% 90%;
         --ring: 270 70% 50%;
         --radius: 1rem;
-        --sidebar-background: 270 30% 95%;
+        --sidebar-background: 270 30% 95% / 0.85;
         --sidebar-foreground: 270 50% 30%;
         --sidebar-primary: 270 70% 50%;
         --sidebar-primary-foreground: 0 0% 98%;
@@ -35,11 +35,11 @@
     }
 
     .dark {
-        --background: 270 20% 18%;
+        --background: 270 20% 18% / 0.7;
         --foreground: 270 40% 90%;
-        --card: 270 30% 13%;
+        --card: 270 30% 13% / 0.8;
         --card-foreground: 270 40% 90%;
-        --popover: 270 20% 18%;
+        --popover: 270 20% 18% / 0.9;
         --popover-foreground: 270 40% 90%;
         --primary: 270 70% 70%;
         --primary-foreground: 270 10% 10%;
@@ -54,7 +54,7 @@
         --border: 240 3.7% 15.9%;
         --input: 240 3.7% 15.9%;
         --ring: 270 70% 70%;
-        --sidebar-background: 270 40% 15%;
+        --sidebar-background: 270 40% 15% / 0.85;
         --sidebar-foreground: 270 40% 90%;
         --sidebar-primary: 270 70% 60%;
         --sidebar-primary-foreground: 0 0% 100%;
@@ -72,5 +72,43 @@
 
     body {
         @apply bg-background text-foreground;
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/ai_verse_background.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: -2;
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 0, 255, 0.3);
+        z-index: -1;
+    }
+}
+
+@layer components {
+    .card,
+    .bg-card {
+        backdrop-filter: blur(8px);
+    }
+
+    .bg-background {
+        backdrop-filter: blur(4px);
     }
 }

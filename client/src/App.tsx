@@ -23,9 +23,10 @@ function App() {
     return (
         <QueryClientProvider client={queryClient}>
             <div
-                className="dark antialiased"
+                className="dark antialiased relative"
                 style={{
                     colorScheme: "dark",
+                    zIndex: 1,
                 }}
             >
                 <BrowserRouter>
@@ -33,7 +34,7 @@ function App() {
                         <SidebarProvider>
                             <AppSidebar />
                             <SidebarInset>
-                                <div className="flex flex-1 flex-col gap-4 size-full container">
+                                <div className="flex flex-1 flex-col gap-4 size-full container relative z-10">
                                     <Routes>
                                         <Route path="/" element={<Home />} />
                                         <Route
