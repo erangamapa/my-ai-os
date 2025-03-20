@@ -202,7 +202,7 @@ export const placeNBAMoneyLineBet: Action = {
                     {
                         width: 800,
                         height: 576,
-                        prompt: "Create an image of a Lakers and Bulls game with their logos in the background",
+                        prompt: `Create an image of a ${eventName} game with their logos in the background. Also add a text overlay with wagered $${stake} on ${teamName} with odds ${price}.`,
                     },
                     runtime
                 );
