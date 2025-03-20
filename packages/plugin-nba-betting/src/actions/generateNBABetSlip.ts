@@ -187,7 +187,7 @@ export const generateNBABetSlip: Action = {
                 {
                     width: 800,
                     height: 576,
-                    prompt: `Create an image of a ${eventName} game with their logos in the background. Also add a text overlay with wagered $${stake?.toString()} on ${teamName} with odds ${price}.`,
+                    prompt: `Create an image of a ${eventName} game with their logos in the background. Add 'wagered $${stake?.toString()} X ${price}' to the very bottom of the image without covering logos.`,
                 },
                 runtime
             );
