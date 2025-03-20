@@ -44,15 +44,12 @@ export default function useVersion() {
                 ) {
                     toast({
                         variant: "default",
-                        title: `New version ${latestVersion} is available.`,
-                        description: "Visit GitHub for more information.",
+                        title: `Welcome to CB AI Verse.`,
+                        description: "Visit cb.ai for more information.",
                         action: (
-                            <NavLink
-                                to="https://github.com/elizaos/eliza/releases"
-                                target="_blank"
-                            >
+                            <NavLink to="cb.ai" target="_blank">
                                 <ToastAction altText="Update">
-                                    Update
+                                    Visit
                                 </ToastAction>
                             </NavLink>
                         ),

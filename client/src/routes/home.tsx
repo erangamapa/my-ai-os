@@ -12,13 +12,12 @@ import {
 import { apiClient } from "@/lib/api";
 import { NavLink } from "react-router";
 import { UUID } from "@elizaos/core";
-import { formatAgentName } from "@/lib/utils";
 
 export default function Home() {
     const query = useQuery({
         queryKey: ["agents"],
         queryFn: () => apiClient.getAgents(),
-        refetchInterval: 5_000
+        refetchInterval: 5_000,
     });
 
     const agents = query?.data?.agents;
@@ -35,7 +34,11 @@ export default function Home() {
                         <CardContent>
                             <div className="rounded-md bg-muted aspect-square w-full grid place-items-center">
                                 <div className="text-6xl font-bold uppercase">
-                                    {formatAgentName(agent?.name)}
+                                    <img
+                                        src="https://res.cloudinary.com/betengine/image/upload/v1742486144/media-cb/download_5_-Photoroom.png"
+                                        alt={agent?.name}
+                                        className="rounded-md"
+                                    />
                                 </div>
                             </div>
                         </CardContent>

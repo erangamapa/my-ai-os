@@ -181,8 +181,8 @@ export default function Page({ agentId }: { agentId: UUID }) {
                                     className="flex flex-row items-center gap-2"
                                 >
                                     {message?.user !== "user" ? (
-                                        <Avatar className="size-8 p-1 border rounded-full select-none">
-                                            <AvatarImage src="/elizaos-icon.png" />
+                                        <Avatar className="size-16 p-1 border rounded-full select-none">
+                                            <AvatarImage src="https://res.cloudinary.com/betengine/image/upload/v1742486144/media-cb/download_5_-Photoroom.png" />
                                         </Avatar>
                                     ) : null}
                                     <div className="flex flex-col">

@@ -37,17 +37,17 @@ export function AppSidebar() {
                         <SidebarMenuButton size="lg" asChild>
                             <NavLink to="/">
                                 <img
-                                    src="/elizaos-icon.png"
-                                    width="100%"
-                                    height="100%"
-                                    className="size-7"
+                                    src="/cb_logo_latest.png"
+                                    width="40"
+                                    height="20"
+                                    className=""
                                 />
 
                                 <div className="flex flex-col gap-0.5 leading-none">
                                     <span className="font-semibold">
-                                        ElizaOS
+                                        CB AI Verse
                                     </span>
-                                    <span className="">v{info?.version}</span>
+                                    <span className="">v0.0.1-beta.1</span>
                                 </div>
                             </NavLink>
                         </SidebarMenuButton>
@@ -100,10 +100,7 @@ export function AppSidebar() {
             <SidebarFooter>
                 <SidebarMenu>
                     <SidebarMenuItem>
-                        <NavLink
-                            to="https://elizaos.github.io/eliza/docs/intro/"
-                            target="_blank"
-                        >
+                        <NavLink to="https://cb.ai/docs/" target="_blank">
                             <SidebarMenuButton>
                                 <Book /> Documentation
                             </SidebarMenuButton>
