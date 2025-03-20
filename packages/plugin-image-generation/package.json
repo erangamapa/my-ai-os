@@ -20,7 +20,6 @@
     ],
     "dependencies": {
         "@elizaos/core": "workspace:*",
-        "cloudinary": "^2.6.0",
         "tsup": "8.3.5"
     },
     "scripts": {

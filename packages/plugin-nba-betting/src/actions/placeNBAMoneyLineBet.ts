@@ -6,6 +6,7 @@ import {
     IAgentRuntime,
     Memory,
     State,
+    generateImage,
 } from "@elizaos/core";
 import { validateNBAMoneyLineBettingConfig } from "../environment";
 import { placeNBABetExamples } from "../examples";
@@ -14,6 +15,52 @@ import { Side } from "../types";
 import { extractStake } from "../utils/extractStake";
 import { sanitizeMarketResponse } from "../utils/sanitizeMarketResponse";
 import { extractTeamData } from "../referenceData";
+import { v2 as cloudinary } from "cloudinary";
+import fs from "fs";
+
+export async function validateCloudinaryConfig(
+    runtime: IAgentRuntime
+): Promise<boolean> {
+    const cloudName = runtime.getSetting("CLOUDINARY_CLOUD_NAME");
+    const apiKey = runtime.getSetting("CLOUDINARY_API_KEY");
+    const apiSecret = runtime.getSetting("CLOUDINARY_API_SECRET");
+
+    if (!cloudName || !apiKey || !apiSecret) {
+        elizaLogger.error(
+            "Missing Cloudinary configuration. Please set CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET."
+        );
+        return false;
+    }
+
+    // Configure Cloudinary
+    cloudinary.config({
+        cloud_name: cloudName,
+        api_key: apiKey,
+        api_secret: apiSecret,
+    });
+
+    return true;
+}
+
+export async function uploadToCloudinary(
+    filePath: string,
+    filename: string
+): Promise<string> {
+    try {
+        elizaLogger.log(`Uploading image to Cloudinary: ${filename}`);
+        const result = await cloudinary.uploader.upload(filePath, {
+            public_id: filename,
+            overwrite: true,
+            resource_type: "image",
+        });
+
+        elizaLogger.log(`Cloudinary upload successful: ${result.secure_url}`);
+        return result.secure_url;
+    } catch (error) {
+        elizaLogger.error(`Cloudinary upload failed: ${error}`);
+        throw error;
+    }
+}
 
 export const placeNBAMoneyLineBet: Action = {
     name: "PLACE_NBA_BET",
@@ -137,11 +184,46 @@ export const placeNBAMoneyLineBet: Action = {
             elizaLogger.success(`Successfully placed bet on ${teamName}`);
 
             // Create a URL to a bet tracking page (example URL)
-            const url = `https://stg.cb.com/share/en/bets/647ce9ec-0119-4159-8a41-650b01fff05c`;
-            if (data.status === "ACCEPTED") {
+            //const url = `https://stg.cb.com/share/en/bets/647ce9ec-0119-4159-8a41-650b01fff05c`;
+            const status = data.status;
+            if (status === "ACCEPTED" || status === "PENDING_ACCEPTANCE") {
+                const cloudinaryConfigValid =
+                    await validateCloudinaryConfig(runtime);
+                if (!cloudinaryConfigValid) {
+                    callback({
+                        text:
+                            status === "ACCEPTED"
+                                ? `Successfully placed a bet of $${stake} on ${teamName} in the ${eventName} game. However failed to generate betslip`
+                                : `Bet is pending for acceptance with $${stake} on ${teamName} in the ${eventName} game. Waiting for acceptance. However failed to generate betslip`,
+                    });
+                    return false;
+                }
+                const images = await generateImage(
+                    {
+                        width: 800,
+                        height: 576,
+                        prompt: "Create an image of a Lakers and Bulls game with their logos in the background",
+                    },
+                    runtime
+                );
+                const cloudinaryUrl =
+                    await saveGeneratedImageAndUploadToCloudinary(images);
                 callback({
-                    text: `Successfully placed a bet of $${stake} on ${teamName} in the ${eventName} game`,
-                    url,
+                    text:
+                        status === "ACCEPTED"
+                            ? `Successfully placed a bet of $${stake} on ${teamName} in the ${eventName} game`
+                            : `Bet is pending for acceptance with $${stake} on ${teamName} in the ${eventName} game. Waiting for acceptance`,
+                    attachments: [
+                        {
+                            id: crypto.randomUUID(),
+                            url: cloudinaryUrl,
+                            title: "Betslip",
+                            source: "imageGeneration",
+                            description: "Lakers vs Bulls game",
+                            text: "Betting for Lakers vs Bulls",
+                            contentType: "image/png",
+                        },
+                    ],
                 });
                 return true;
             }
@@ -161,3 +243,80 @@ export const placeNBAMoneyLineBet: Action = {
     },
     examples: placeNBABetExamples as ActionExample[][],
 } as Action;
+
+// Define the missing function locally
+export async function saveGeneratedImageAndUploadToCloudinary(imageResult: {
+    success: boolean;
+    data?: string[];
+    error?: any;
+}): Promise<string> {
+    if (
+        !imageResult.success ||
+        !imageResult.data ||
+        imageResult.data.length === 0
+    ) {
+        throw new Error("Failed to generate image");
+    }
+
+    const image = imageResult.data[0];
+    // Save the image and get filepath
+    const filename = `generated_${Date.now()}`;
+
+    // Choose save function based on image data format
+    const filepath = image.startsWith("http")
+        ? await saveHeuristImage(image, filename)
+        : saveBase64Image(image, filename);
+
+    // Upload to Cloudinary
+    const cloudinaryUrl = await uploadToCloudinary(filepath, filename);
+
+    // Optionally delete the local file after uploading to Cloudinary
+    try {
+        fs.unlinkSync(filepath);
+        elizaLogger.log(`Deleted local file: ${filepath}`);
+    } catch (error) {
+        elizaLogger.error(`Failed to delete local file: ${filepath}`, error);
+    }
+
+    return cloudinaryUrl;
+}
+
+// Define helper functions
+export function saveBase64Image(base64Data: string, filename: string): string {
+    // Remove header from base64 string if it exists
+    const base64Image = base64Data.replace(/^data:image\/\w+;base64,/, "");
+
+    // Create directory if it doesn't exist
+    const dir = "./tmp";
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+
+    // Save file
+    const filepath = `${dir}/${filename}.png`;
+    fs.writeFileSync(filepath, base64Image, { encoding: "base64" });
+    elizaLogger.log(`Saved base64 image to: ${filepath}`);
+
+    return filepath;
+}
+
+export async function saveHeuristImage(
+    imageUrl: string,
+    filename: string
+): Promise<string> {
+    const response = await fetch(imageUrl);
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+
+    // Create directory if it doesn't exist
+    const dir = "./tmp";
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+
+    const filepath = `${dir}/${filename}.png`;
+    fs.writeFileSync(filepath, buffer);
+    elizaLogger.log(`Saved image from URL to: ${filepath}`);
+
+    return filepath;
+}

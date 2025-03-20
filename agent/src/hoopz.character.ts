@@ -6,7 +6,7 @@ export const mainCharacter = {
     name: "Agent Hoopz",
     clients: [Clients.TWITTER],
     modelProvider: ModelProviderName.HYPERBOLIC,
-    imageProvider: ModelProviderName.TOGETHER,
+    imageModelProvider: ModelProviderName.TOGETHER,
     plugins: [imageGenerationPlugin, nbaBetting],
     settings: {
         voice: {
