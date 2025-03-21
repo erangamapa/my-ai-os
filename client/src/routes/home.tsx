@@ -48,10 +48,7 @@ export default function Home() {
                                     to={`/chat/${agent.id}`}
                                     className="w-full grow"
                                 >
-                                    <Button
-                                        variant="outline"
-                                        className="w-full grow"
-                                    >
+                                    <Button className="w-full grow btn-purple">
                                         Chat
                                     </Button>
                                 </NavLink>
@@ -59,7 +56,7 @@ export default function Home() {
                                     to={`/settings/${agent.id}`}
                                     key={agent.id}
                                 >
-                                    <Button size="icon" variant="outline">
+                                    <Button size="icon" className="btn-purple">
                                         <Cog />
                                     </Button>
                                 </NavLink>
